@@ -2,10 +2,6 @@
   "name": "kanban-board",
   "version": "0.0.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "author": "Jonathan Robic <hello@jonathanrobic.fr>",
   "scripts": {
     "preinstall": "npx only-allow pnpm",

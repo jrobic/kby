@@ -13,9 +13,14 @@ coverage
 out/
 build
 
+# vite, tsc
+dist
+dist-ssr
+
 # misc
 .DS_Store
 *.pem
+*.local
 
 # debug
 npm-debug.log*

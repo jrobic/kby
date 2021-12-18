@@ -10,12 +10,12 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
+    "@kanban-board/ui": "workspace:*",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@kanban-board/tsconfig": "workspace:*",
-    "@kanban-board/ui": "workspace:*",
+    "@kanban-board/scripts": "workspace:*",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",

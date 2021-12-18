@@ -6,10 +6,10 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [react(), tsconfigPaths(), visualizer(), env()],
-	css: {
-		modules: {
-			localsConvention: "camelCaseOnly",
-		},
-	},
+  plugins: [react(), tsconfigPaths(), visualizer(), env()],
+  css: {
+    modules: {
+      localsConvention: "camelCaseOnly",
+    },
+  },
 });

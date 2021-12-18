@@ -1,5 +1,5 @@
 {
-  "extends": "@kanban-board/tsconfig/react-library.json",
+  "extends": "@kanban-board/scripts/typescript/react-library.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

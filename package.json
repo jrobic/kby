@@ -1,12 +1,16 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "kanban-board",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
+  "author": "Jonathan Robic <hello@jonathanrobic.fr>",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "clean": "turbo run clean",
+    "clean:npm": "find . -maxdepth 3 -iname \"node_modules\" | xargs rm -rf",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
@@ -23,8 +27,7 @@
           "^build"
         ],
         "outputs": [
-          "dist/**",
-          ".next/**"
+          "dist/**"
         ]
       },
       "lint": {
@@ -32,11 +35,15 @@
       },
       "dev": {
         "cache": false
+      },
+      "clean": {
+        "cache": false
       }
     }
   },
   "engines": {
-    "npm": ">=7.0.0",
+    "pnpm": ">=6.9.0",
     "node": ">=14.0.0"
-  }
+  },
+  "license": "MIT"
 }

@@ -1,1 +1,1 @@
-module.exports = require("./eslint/base");
+module.exports = require("./eslint");

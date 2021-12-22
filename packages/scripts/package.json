@@ -4,11 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "bin": {
+    "jest": "./node_modules/.bin/jest",
     "eslint": "./node_modules/.bin/eslint"
   },
   "files": [
     "typescript",
-    "eslint"
+    "eslint",
+    "jest"
   ],
   "scripts": {
     "clean": "rm -rf .turbo && rm -rf node_modules"
@@ -16,6 +18,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
+    "esbuild-jest": "^0.5.0",
     "eslint": "^8.5.0",
     "eslint-config-airbnb": "^19.0.2",
     "eslint-config-airbnb-typescript": "^16.1.0",
@@ -28,6 +31,15 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-testing-library": "^5.0.1",
     "eslint-plugin-unicorn": "^39.0.0",
-    "eslint-plugin-unused-imports": "^2.0.0"
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "jest": "^27.4.5",
+    "jest-circus": "^27.4.5",
+    "jest-cli": "^27.4.5",
+    "jest-config": "^27.4.5",
+    "jest-watch-select-projects": "^2.0.0",
+    "jest-watch-typeahead": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3"
   }
 }

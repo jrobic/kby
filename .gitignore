@@ -22,6 +22,8 @@ dist-ssr
 *.pem
 *.local
 
+apps/web/stats.html
+
 # debug
 npm-debug.log*
 yarn-debug.log*

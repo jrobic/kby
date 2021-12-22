@@ -13,7 +13,9 @@
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["@types/jest"]
   },
   "exclude": ["node_modules"]
 }

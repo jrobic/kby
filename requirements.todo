@@ -6,15 +6,22 @@ Apps:
     ☐ react native with expo
 
 Apis:
-  ☐ NestJS
-  ☐ GraphQL with Subscription (PubSub)
+  ✔ NestJS @done(21-12-27 14:29)
+  GraphQL:
+    ✔ install with fastify @done(21-12-27 14:30)
+    ☐ with Subscription (PubSub)
 
 Packages:
   ui:
     ☐ Storybook
+  scripts:
+    ✔ jest config @done(21-12-27 14:30)
+    ✔ typescript configs @done(21-12-27 14:30)
+    ✔ eslint @done(21-12-27 14:30)
 
 Common:
   ☐ Cypress
+  ✔ husky @done(21-12-27 14:31)
 
 Infra:
   ☐ Auth0 / Keycloak

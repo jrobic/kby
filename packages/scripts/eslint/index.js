@@ -11,6 +11,7 @@ const commonRules = {
   "unicorn/prefer-module": "off",
   "unicorn/better-regex": "error",
   "unicorn/filename-case": "off",
+  "unicorn/prefer-node-protocol": "off",
   "unicorn/prevent-abbreviations": [
     "error",
     {

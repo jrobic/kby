@@ -1,0 +1,33 @@
+name: "⚡️  Install Deps"
+description: "Install pnpm with node, install dependencies"
+
+runs:
+  using: "composite"
+  steps:
+    - name: ⎔ Setup pnpm
+      uses: pnpm/action-setup@v2.0.1
+      with:
+        version: latest
+
+    - name: ⎔ Setup node
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+        cache: "pnpm"
+
+    # https://pnpm.io/continuous-integration#github-actions
+    - name: ⚡️ Cache .pnpm-store
+      uses: actions/cache@v2
+      with:
+        path: ~/.pnpm-store
+        key: ${{ runner.os}}-modules-${{ hashFiles('**/pnpm-lock.yaml') }}
+
+    - name: ⎔ Setup node
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+        cache: "pnpm"
+
+    - name: Install NPM packages
+      run: pnpm install
+      shell: bash

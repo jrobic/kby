@@ -1,0 +1,62 @@
+name: 🚀  Deployment
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request: {}
+
+jobs:
+  lint:
+    name: ⬣ ESLint
+    # needs: [cache]
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑  Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.1
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: "50"
+      - name: "⚡️  Install Deps"
+        uses: ./.github/deps
+      - name: Codegen
+        run: pnpm run codegen --filter="web"
+
+      - name: 🔬  Lint
+        run: pnpm run lint
+
+  jest:
+    name: 🃏  Jest
+    # needs: [cache]
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑  Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.1
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: "50"
+      - name: "⚡️  Install Deps"
+        uses: ./.github/deps
+      - name: Codegen
+        run: pnpm run codegen --filter="web"
+
+      - name: 👷  Test
+        run: pnpm run test:cov
+
+  build:
+    name: 👷  Build
+    # needs: [cache]
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑  Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.1
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: "50"
+      - name: "⚡️  Install Deps"
+        uses: ./.github/deps
+      - name: 👷  Build
+        run: pnpm run schema && pnpm run build

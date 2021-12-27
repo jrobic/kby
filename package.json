@@ -10,6 +10,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
+    "schema": "turbo run schema",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
     "test:hook": "turbo run test:hook",
@@ -22,9 +23,11 @@
     "turbo": "latest"
   },
   "turbo": {
+    "npmClient": "pnpm",
     "pipeline": {
       "build": {
         "dependsOn": [
+          "prebuild",
           "^build"
         ],
         "outputs": [
@@ -32,6 +35,9 @@
         ]
       },
       "lint": {
+        "dependsOn": [
+          "^lint"
+        ],
         "outputs": []
       },
       "test": {
@@ -51,7 +57,13 @@
       "dev": {
         "cache": false
       },
+      "prebuild": {
+        "cache": false
+      },
       "clean": {
+        "cache": false
+      },
+      "schema": {
         "cache": false
       }
     }

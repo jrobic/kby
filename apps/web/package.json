@@ -5,6 +5,7 @@
   "scripts": {
     "codegen": "graphql-codegen",
     "dev": "vite --port 9001 --clearScreen false",
+    "prebuild": "npm run codegen",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "TIMING=1 eslint src/**/*.tsx --fix && tsc --noEmit",

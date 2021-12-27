@@ -22,6 +22,7 @@ Packages:
 
 Common:
   ☐ Cypress
+  ☐ MSW
   ✔ husky @done(21-12-27 14:31)
 
 Infra:

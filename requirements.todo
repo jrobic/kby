@@ -1,0 +1,34 @@
+Apps:
+  web:
+    ☐ Install Tailwindcss v3
+    ☐ React Query
+  mobile (nth):
+    ☐ react native with expo
+
+Apis:
+  ☐ NestJS
+  ☐ GraphQL with Subscription (PubSub)
+
+Packages:
+  ui:
+    ☐ Storybook
+
+Common:
+  ☐ Cypress
+
+Infra:
+  ☐ Auth0 / Keycloak
+  ☐ Kong
+  ☐ Kubernetes
+  ☐ Terraform
+  ☐ ELK
+  ☐ Github Actions
+  ☐ Vercel + Digital Ocean
+
+To Discover:
+  ☐ Micro Frontends
+  ☐ Open Relay
+  ☐ ELK
+  ☐ APM with ELK
+  ☐ React Performance Profiling (ELK)
+  ☐ Play with Discord Hook

@@ -10,7 +10,8 @@
   "files": [
     "typescript",
     "eslint",
-    "jest"
+    "jest",
+    "babel.config.js"
   ],
   "scripts": {
     "clean": "rm -rf .turbo && rm -rf node_modules"
@@ -40,6 +41,7 @@
     "jest-watch-typeahead": "^1.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^27.0.3"
+    "@types/jest": "^27.0.3",
+    "ts-jest": "^27.1.2"
   }
 }

@@ -6,7 +6,7 @@ module.exports = (packageName = "node", directoryPath = __dirname) => ({
   testEnvironment: "jest-environment-jsdom",
   setupFilesAfterEnv: [path.join(directoryPath, "src/setupTests.ts")],
   snapshotSerializers: [],
-  testRegex: `(${directoryPath}/.*/src/.*|\\.(test|spec|e2e))\\.tsx?$`,
+  testRegex: `(${directoryPath}/.*/src/.*|\\.(test|spec|e2e-spec))\\.tsx?$`,
   testURL: "http://localhost/",
   moduleNameMapper: {
     "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",

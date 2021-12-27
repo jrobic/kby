@@ -5,16 +5,18 @@ module.exports = {
 
   testEnvironment: "node",
   transform: {
-    "^.+\\.(js|jsx|ts|tsx)$": [
-      "esbuild-jest",
-      {
-        sourcemap: true,
-        loaders: {
-          ".spec.ts": "tsx",
-          ".spec.js": "jsx",
-        },
-      },
-    ],
+    "^.+\\.(js|jsx|ts|tsx)$": "ts-jest",
+    // "^.+\\.(js|jsx|ts|tsx)$": [
+    //   "esbuild-jest",
+    //   {
+    //     sourcemap: true,
+    //     loaders: {
+    //       ".spec.ts": "tsx",
+    //       ".e2e-spec.ts": "tsx",
+    //       ".spec.js": "jsx",
+    //     },
+    //   },
+    // ],
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   // modulePathIgnorePatterns: [

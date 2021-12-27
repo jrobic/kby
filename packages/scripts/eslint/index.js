@@ -9,13 +9,11 @@ const commonRules = {
   // Unicorn
   "unicorn/prefer-module": "off",
   "unicorn/better-regex": "error",
-  "unicorn/filename-case": [
+  "unicorn/filename-case": "off",
+  "unicorn/prevent-abbreviations": [
     "error",
     {
-      cases: {
-        kebabCase: true,
-        pascalCase: true,
-      },
+      ignore: ["\\.e2e$", "\\.e2e-spec$", /^ignore/i],
     },
   ],
 };
@@ -95,8 +93,8 @@ module.exports = {
         "plugin:import/recommended",
         "plugin:import/typescript",
         "plugin:jsx-a11y/recommended",
-        // "plugin:unicorn/recommended",
-        // "plugin:react/jsx-runtime",
+        "plugin:unicorn/recommended",
+        "plugin:react/jsx-runtime",
         "plugin:prettier/recommended",
         "prettier",
       ],
@@ -105,7 +103,7 @@ module.exports = {
       },
     },
     {
-      files: ["**/*.+(test|spec).+(ts|tsx|js|jsx)"],
+      files: ["**/*.+(test|spec|e2e-spec).+(ts|tsx|js|jsx)"],
       rules: {
         "import/no-extraneous-dependencies": "off",
         "@typescript-eslint/no-non-null-assertion": "off",

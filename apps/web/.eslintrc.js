@@ -1,1 +1,1 @@
-module.exports = require("@kanban-board/scripts/eslint");
+module.exports = require("@kby/scripts/eslint");

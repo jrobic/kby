@@ -1,4 +1,4 @@
-const getJestConfig = require("@kanban-board/scripts/jest/react");
+const getJestConfig = require("@kby/scripts/jest/react");
 const packageName = require("./package.json").name.replace(/@\w+\//, "");
 
 module.exports = {

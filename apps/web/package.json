@@ -1,8 +1,9 @@
 {
-  "name": "@kanban-board/web",
+  "name": "@kby/web",
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "codegen": "graphql-codegen",
     "dev": "vite --port 9001 --clearScreen false",
     "build": "tsc && vite build",
     "preview": "vite preview",
@@ -14,15 +15,19 @@
     "test:cov": "jest --coverage"
   },
   "dependencies": {
-    "@kanban-board/ui": "workspace:*",
+    "@kby/ui": "workspace:*",
+    "graphql-request": "^3.7.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-query": "^3.34.6"
   },
   "devDependencies": {
+    "@kby/graphql": "workspace:*",
+    "@kby/scripts": "workspace:*",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
     "@testing-library/user-event": "^13.5.0",
-    "@kanban-board/scripts": "workspace:*",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",

@@ -1,7 +1,8 @@
 Apps:
   web:
     ☐ Install Tailwindcss v3
-    ☐ React Query
+    ✔ React Query @done(21-12-27 16:48)
+    ✔ GraphQL Codegen @done(21-12-27 16:48)
   mobile (nth):
     ☐ react native with expo
 

@@ -1,5 +1,5 @@
 module.exports = {
-  extends: [require.resolve('@kanban-board/scripts/eslint')],
+  extends: [require.resolve('@kby/scripts/eslint')],
 
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off',

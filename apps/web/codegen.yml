@@ -1,0 +1,17 @@
+overwrite: true
+schema: "../../apps/api/src/schema.graphql"
+
+generates:
+  src/generated/types-and-hooks.ts:
+    documents:
+      - src/**/*.graphql
+    config:
+      fetcher: "graphql-request"
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-query
+
+hooks:
+  afterAllFileWrite:
+    - prettier --write

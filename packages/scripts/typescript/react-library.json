@@ -7,6 +7,6 @@
     "module": "ESNext",
     "target": "ES6",
     "jsx": "react-jsx",
-    "types": ["@types/jest"]
+    "types": ["@types/node", "@types/jest"]
   }
 }

@@ -5,6 +5,7 @@ const commonRules = {
 
   // import
   "import/prefer-default-export": "off",
+  "import/namespace": "off",
 
   // Unicorn
   "unicorn/prefer-module": "off",

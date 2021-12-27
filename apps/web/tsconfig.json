@@ -1,6 +1,6 @@
 {
   "exclude": ["node_modules"],
-  "extends": "@kanban-board/scripts/typescript/vite.json",
+  "extends": "@kby/scripts/typescript/vite.json",
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist"

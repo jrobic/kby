@@ -1,49 +1,20 @@
-import { useState } from "react";
+import { GraphQLClient } from "graphql-request";
 
-import { Button } from "@kanban-board/ui";
+import { Button } from "@kby/ui";
 
-import logo from "./logo.svg";
+import { useHelloQuery } from "./generated/types-and-hooks";
 import "./App.css";
 
+const client = new GraphQLClient(process.env.KBY_API_GRAPHQL_URL as string, {});
+
 export function App() {
-  const [count, setCount] = useState(0);
+  const { data } = useHelloQuery(client);
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <Button />
-          <button
-            type="button"
-            onClick={() => setCount((currentCount) => currentCount + 1)}
-          >
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {" | "}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
+        <p>{data?.hello}</p>
+        <Button />
       </header>
     </div>
   );

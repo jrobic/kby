@@ -11,7 +11,7 @@ import { NestConfig } from './config/config.interface';
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(
     AppModule,
-    new FastifyAdapter(),
+    new FastifyAdapter({ logger: { level: 'info' } }),
   );
 
   const configService = app.get(ConfigService);

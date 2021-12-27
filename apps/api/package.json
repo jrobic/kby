@@ -1,5 +1,5 @@
 {
-  "name": "@kanban-board/api",
+  "name": "@kby/api",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -33,7 +33,7 @@
     "rxjs": "^7.2.0"
   },
   "devDependencies": {
-    "@kanban-board/scripts": "workspace:*",
+    "@kby/scripts": "workspace:*",
     "@nestjs/cli": "^8.0.0",
     "@nestjs/schematics": "^8.0.0",
     "@nestjs/testing": "^8.0.0",

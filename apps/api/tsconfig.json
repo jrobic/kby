@@ -1,5 +1,5 @@
 {
-  "extends": "@kanban-board/scripts/typescript/nestjs.json",
+  "extends": "@kby/scripts/typescript/nestjs.json",
   "compilerOptions": {
     "outDir": "./dist",
     "baseUrl": "./"

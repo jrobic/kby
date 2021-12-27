@@ -15,7 +15,7 @@
     "skipLibCheck": true,
     "strict": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["@types/jest"]
+    "types": ["@types/node", "@types/jest"]
   },
   "exclude": ["node_modules"]
 }

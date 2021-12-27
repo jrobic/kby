@@ -1,5 +1,5 @@
 {
-  "name": "@kanban-board/scripts",
+  "name": "@kby/scripts",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
+    "@types/node": "^16.0.0",
     "ts-jest": "^27.1.2"
   }
 }

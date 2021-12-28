@@ -4,8 +4,21 @@ on:
     branches:
       - main
       - develop
-  pull_request: {}
-
+    paths-ignore:
+      - "*.md"
+      - ".vscode/**"
+      - ".husky/**"
+      - ".dockerignore"
+      - ".gitignore"
+      - "*.todo"
+  pull_request:
+    paths-ignore:
+      - "*.md"
+      - ".vscode/**"
+      - ".husky/**"
+      - ".dockerignore"
+      - ".gitignore"
+      - "*.todo"
 jobs:
   lint:
     name: ⬣. Lint (${{ matrix.node }})

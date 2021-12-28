@@ -38,7 +38,7 @@ Infra:
 Quality:
   ✔ Renovate @done(21-12-28 10:41)
   ✔ Codecov @done(21-12-28 13:20)
-  ☐ CodeQL
+  ✔ CodeQL @done(21-12-28 15:36)
 
 To Discover:
   ☐ Micro Frontends

@@ -19,7 +19,7 @@
     "test:hook": "jest --lastCommit --silent",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+    "clean": "rm -rf .turbo dist"
   },
   "dependencies": {
     "@nestjs/common": "8.2.4",

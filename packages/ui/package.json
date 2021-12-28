@@ -5,12 +5,20 @@
   "types": "./src/index.tsx",
   "license": "MIT",
   "scripts": {
-    "lint": "TIMING=1 eslint src/**/*.tsx --fix && tsc --noEmit"
+    "lint": "TIMING=1 eslint src/**/*.tsx --fix && tsc --noEmit",
+    "test": "jest",
+    "test:hook": "jest --lastCommit --silent",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
   },
   "devDependencies": {
     "@types/react": "17.0.38",
     "@types/react-dom": "17.0.11",
     "@kby/scripts": "workspace:*",
+    "@testing-library/jest-dom": "5.16.1",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/react-hooks": "7.0.2",
+    "@testing-library/user-event": "13.5.0",
     "typescript": "4.5.4"
   },
   "dependencies": {

@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "TIMING=1 eslint src/**/*.tsx --fix && tsc --noEmit",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "clean": "rm -rf .turbo dist",
     "test": "jest",
     "test:hook": "jest --lastCommit --silent",
     "test:watch": "jest --watch",

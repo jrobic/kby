@@ -1,0 +1,24 @@
+# Enable PR comments for now
+comment: # this is a top-level key
+  layout: "reach, diff, flags, files"
+  behavior: default
+  require_changes: false # if true: only post the comment if coverage changes
+  require_base: false # [true :: must have a base report to post]
+  require_head: true # [true :: must have a head report to post]
+
+# About `carryforward: true`
+# https://docs.codecov.com/docs/carryforward-flags
+
+flags:
+  api:
+    carryforward: true
+    paths:
+      - apps/api/
+  web:
+    carryforward: true
+    paths:
+      - apps/web/
+  ui:
+    carryforward: true
+    paths:
+      - packages/ui/

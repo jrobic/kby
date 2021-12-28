@@ -35,6 +35,10 @@ Infra:
   ✘ Vercel + Digital Ocean @cancelled(21-12-28 01:20)
   ☐ Linode?
 
+Quality:
+  ✔ Renovate @done(21-12-28 10:41)
+  ☐ Codecov
+
 To Discover:
   ☐ Micro Frontends
   ☐ Open Relay

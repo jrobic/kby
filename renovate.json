@@ -1,5 +1,20 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    ":ignoreUnstable",
+    ":prImmediately",
+    ":automergeDisabled",
+    ":prHourlyLimit2",
+    ":prConcurrentLimit20",
+    "group:monorepos",
+    "group:recommended"
+  ],
+  "timezone": "Europe/Paris",
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies", "dependencies"],
+      "matchUpdateTypes": ["patch"],
+      "groupName": "(dev) dependencies (patch)"
+    }
   ]
 }

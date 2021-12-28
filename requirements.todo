@@ -27,12 +27,13 @@ Common:
 
 Infra:
   ☐ Auth0 / Keycloak
-  ☐ Kong
+  ☐ Kong / Traefik
   ☐ Kubernetes
   ☐ Terraform
   ☐ ELK
-  ☐ Github Actions
-  ☐ Vercel + Digital Ocean
+  ✔ Github Actions @done(21-12-28 01:45)
+  ✘ Vercel + Digital Ocean @cancelled(21-12-28 01:20)
+  ☐ Linode?
 
 To Discover:
   ☐ Micro Frontends

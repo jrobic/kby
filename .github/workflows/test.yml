@@ -1,4 +1,4 @@
-name: 🚀  Deployment
+name: 💚. Test and Build
 on:
   push:
     branches:
@@ -8,40 +8,54 @@ on:
 
 jobs:
   lint:
-    name: ⬣ ESLint
+    name: ⬣. Lint (${{ matrix.node }})
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ["16.x"]
+
     steps:
-      - name: 🛑  Cancel Previous Runs
+      - name: 🛑. Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
         with:
           fetch-depth: "50"
-      - name: "⚡️  Install Deps"
+
+      - name: ⚡️. Install Deps
         uses: ./.github/deps
+        with:
+          node-version: ${{ matrix.node }}
+
       - name: Codegen
         run: pnpm run codegen --filter="web"
 
-      - name: 🔬  Lint
+      - name: 🔬. Lint
         run: pnpm run lint
 
-  jest:
-    name: 🃏  Jest
+  test-unit:
+    name: 🃏. Test Unit (${{ matrix.node }})
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ["16.x"]
     steps:
-      - name: 🛑  Cancel Previous Runs
+      - name: 🛑. Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
         with:
           fetch-depth: "50"
 
-      - name: "⚡️  Install Deps"
+      - name: ⚡️. Install Deps
         uses: ./.github/deps
+        with:
+          node-version: ${{ matrix.node }}
+
       - name: Codegen
         run: pnpm run codegen --filter="web"
 
-      - name: 👷  Test
+      - name: 👷. Test
         run: pnpm run test:cov
 
       - uses: codecov/codecov-action@v2
@@ -66,16 +80,23 @@ jobs:
           name: ui
 
   build:
-    name: 👷  Build
+    name: 👷. Build (${{ matrix.node }})
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ["16.x"]
     steps:
-      - name: 🛑  Cancel Previous Runs
+      - name: 🛑. Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
         with:
           fetch-depth: "50"
-      - name: "⚡️  Install Deps"
+
+      - name: ⚡️. Install Deps
         uses: ./.github/deps
-      - name: 👷  Build
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: 👷. Build
         run: pnpm run schema && pnpm run build

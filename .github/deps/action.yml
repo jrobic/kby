@@ -31,3 +31,7 @@ runs:
     - name: Install NPM packages
       run: pnpm install
       shell: bash
+
+    - name: Resolve PNPM troubleshooting (cyclic workspace dependencies)
+      run: pnpm install
+      shell: bash

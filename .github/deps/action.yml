@@ -25,7 +25,9 @@ runs:
     - name: ⚡️. Cache .pnpm-store
       uses: actions/cache@v2
       with:
-        path: ~/.pnpm-store
+        path: |
+          ~/.pnpm-store
+          ~/.cache/Cypress
         key: ${{ runner.os }}-${{ inputs.node-version }}-modules-${{ hashFiles('**/pnpm-lock.yaml') }}
         restore-keys: |
           ${{ runner.os }}-${{ inputs.node-version }}-modules

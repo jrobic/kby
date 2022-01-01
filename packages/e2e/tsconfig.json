@@ -1,0 +1,9 @@
+{
+  "exclude": ["node_modules"],
+  "extends": "@kby/scripts/typescript/vite.json",
+  "compilerOptions": {
+    "types": ["@types/node", "cypress", "@testing-library/cypress"],
+    "isolatedModules": false
+  },
+  "include": ["cypress/**/*"]
+}

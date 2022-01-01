@@ -8,6 +8,7 @@ Apps:
 
 Apis:
   ✔ NestJS @done(21-12-27 14:29)
+  ☐ prisma
   GraphQL:
     ✔ install with fastify @done(21-12-27 14:30)
     ☐ with Subscription (PubSub)
@@ -21,7 +22,7 @@ Packages:
     ✔ eslint @done(21-12-27 14:30)
 
 Common:
-  ☐ Cypress
+  ✔ Cypress @done(22-01-01 11:34)
   ☐ MSW
   ✔ husky @done(21-12-27 14:31)
 
@@ -39,6 +40,7 @@ Quality:
   ✔ Renovate @done(21-12-28 10:41)
   ✔ Codecov @done(21-12-28 13:20)
   ✔ CodeQL @done(21-12-28 15:36)
+  ✔ GitGuardian @done(21-12-28 15:54)
 
 To Discover:
   ☐ Micro Frontends

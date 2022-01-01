@@ -1,5 +1,5 @@
 {
-  "name": "kanban-board",
+  "name": "kby",
   "version": "0.0.0",
   "private": true,
   "author": "Jonathan Robic <hello@jonathanrobic.fr>",
@@ -8,6 +8,7 @@
     "clean": "turbo run clean",
     "clean:npm": "find . -maxdepth 3 -iname \"node_modules\" | xargs rm -rf",
     "build": "turbo run build",
+    "start": "turbo run start --parallel",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "schema": "turbo run schema",
@@ -15,16 +16,23 @@
     "test": "turbo run test",
     "test:hook": "turbo run test:hook",
     "test:cov": "turbo run test:cov",
+    "test:e2e:dev": "start-server-and-test dev \"http-get://localhost:3000/health|http-get://localhost:9001\" 'turbo run test:e2e:run'",
+    "test:e2e:run": "start-server-and-test dev \"http-get://localhost:3000/health|http-get://localhost:9001\" 'turbo run test:e2e:run'",
     "prepare": "husky install"
   },
   "devDependencies": {
     "husky": "7.0.4",
     "prettier": "2.5.1",
+    "start-server-and-test": "^1.14.0",
     "turbo": "latest"
   },
   "turbo": {
     "npmClient": "pnpm",
     "pipeline": {
+      "start": {
+        "dependsOn": [],
+        "outputs": []
+      },
       "build": {
         "dependsOn": [
           "prebuild",
@@ -49,6 +57,12 @@
         "dependsOn": []
       },
       "test:cov": {
+        "outputs": [
+          "coverage/**"
+        ],
+        "dependsOn": []
+      },
+      "test:e2e:run": {
         "outputs": [
           "coverage/**"
         ],

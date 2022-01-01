@@ -15,7 +15,7 @@ Apis:
 
 Packages:
   ui:
-    ☐ Storybook
+    ✔ Storybook @done(22-01-01 16:06)
   scripts:
     ✔ jest config @done(21-12-27 14:30)
     ✔ typescript configs @done(21-12-27 14:30)

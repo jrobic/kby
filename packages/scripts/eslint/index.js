@@ -2,6 +2,8 @@ const commonRules = {
   "no-debugger": "off",
 
   "react/function-component-definition": "off",
+  "react/jsx-props-no-spreading": "off",
+  "react/require-default-props": "off",
 
   // import
   "import/prefer-default-export": "off",
@@ -120,6 +122,12 @@ module.exports = {
       rules: {
         "unicorn/filename-case": "off",
         "unicorn/prevent-abbreviations": "off",
+      },
+    },
+    {
+      files: ["**/*.stories.tsx"],
+      rules: {
+        "import/no-extraneous-dependencies": "off",
       },
     },
   ],

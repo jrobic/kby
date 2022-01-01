@@ -113,3 +113,41 @@ jobs:
 
       - name: 👷. Build
         run: pnpm run schema && pnpm run build
+
+  e2e:
+    name: ⚫️. Cypress
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛑. Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.1
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: "50"
+
+      - name: ⚡️. Install Deps
+        uses: ./.github/deps
+
+      - name: 👷. Build
+        run: pnpm run schema && pnpm run build
+
+      - name: 🏄 Copy test env vars (apps/web)
+        run: cp apps/web/.env.example apps/web/.env
+
+      - name: 🌳. Cypress run
+        uses: cypress-io/github-action@v2
+        continue-on-error: true
+        with:
+          start: pnpm run dev
+          wait-on: "http://localhost:3000/health, http://localhost:9001"
+          command: pnpm run cy:run --filter=e2e -- --record --parallel --group "KBY Cypress" --key ${{ secrets.CYPRESS_RECORD_KEY }}
+          install: false
+        env:
+          DISABLE_TELEMETRY: "true"
+      - uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: packages/e2e/coverage/clover.xml
+          flags: e2e
+          name: e2e

@@ -1,9 +1,11 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
+import { TerminusModule } from '@nestjs/terminus';
 
 import { HelloModule } from './hello/hello.module';
 import { GraphqlConfig } from './config/config.interface';
+import { HealthController } from './health/health.controller';
 import config from './config/config';
 
 @Module({
@@ -32,9 +34,10 @@ import config from './config/config';
       },
       inject: [ConfigService],
     }),
+    TerminusModule,
     HelloModule,
   ],
-  controllers: [],
+  controllers: [HealthController],
   providers: [],
 })
 export class AppModule {}

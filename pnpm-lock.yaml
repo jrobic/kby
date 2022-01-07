@@ -33,7 +33,7 @@ importers:
       '@types/node': 16.11.19
       '@types/supertest': 2.0.11
       apollo-server-fastify: 3.6.1
-      fast-glob: 3.2.7
+      fast-glob: 3.2.8
       graphql: 15.8.0
       reflect-metadata: 0.1.13
       rxjs: 7.5.1
@@ -65,7 +65,7 @@ importers:
       '@types/jest': 27.4.0
       '@types/node': 16.11.19
       '@types/supertest': 2.0.11
-      fast-glob: 3.2.7
+      fast-glob: 3.2.8
       source-map-support: 0.5.21
       supertest: 6.1.6
       ts-loader: 9.2.6_typescript@4.5.4
@@ -10437,6 +10437,17 @@ packages:
       glob-parent: 5.1.2
       merge2: 1.4.1
       micromatch: 4.0.4
+
+  /fast-glob/3.2.8:
+    resolution: {integrity: sha512-UsiHHXoDbC3iS7vBOFvld7Q9XqBu318xztdHiL10Fjov3AK5GI5bek2ZJkxZcjPguOYH39UL1W4A6w+l7tpNtw==}
+    engines: {node: '>=8'}
+    dependencies:
+      '@nodelib/fs.stat': 2.0.5
+      '@nodelib/fs.walk': 1.2.8
+      glob-parent: 5.1.2
+      merge2: 1.4.1
+      micromatch: 4.0.4
+    dev: true
 
   /fast-json-parse/1.0.3:
     resolution: {integrity: sha512-FRWsaZRWEJ1ESVNbDWmsAlqDk96gPQezzLghafp5J4GUKjbCz3OkAHuZs5TuPEtkbVQERysLp9xv6c24fBm8Aw==}

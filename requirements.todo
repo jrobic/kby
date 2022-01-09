@@ -25,6 +25,7 @@ Common:
   ✔ Cypress @done(22-01-01 11:34)
   ☐ MSW
   ✔ husky @done(21-12-27 14:31)
+  ✔ commitlint @done(22-01-09 21:34)
 
 Infra:
   ☐ Auth0 / Keycloak

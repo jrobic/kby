@@ -14,7 +14,7 @@
     "@cypress/code-coverage": "3.9.12",
     "@kby/scripts": "workspace:*",
     "@testing-library/cypress": "8.0.2",
-    "@types/node": "16.11.19",
+    "@types/node": "16.11.20",
     "cypress": "9.2.1",
     "typescript": "4.5.4"
   }

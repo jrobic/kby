@@ -98,7 +98,7 @@ importers:
       typescript: 4.5.4
       vite: 2.7.12
       vite-plugin-env-compatible: 1.1.1
-      vite-plugin-istanbul: 2.3.0
+      vite-plugin-istanbul: 2.4.0
       vite-tsconfig-paths: 3.3.17
     dependencies:
       '@kby/ui': link:../../packages/ui
@@ -121,7 +121,7 @@ importers:
       typescript: 4.5.4
       vite: 2.7.12
       vite-plugin-env-compatible: 1.1.1
-      vite-plugin-istanbul: 2.3.0
+      vite-plugin-istanbul: 2.4.0
       vite-tsconfig-paths: 3.3.17_vite@2.7.12
 
   packages/e2e:
@@ -18602,9 +18602,10 @@ packages:
     resolution: {integrity: sha512-4lqhBWhOzP+SaCPoCVdmpM5cXzjKQV5jgFauxea488oOeElXo/kw6bXkMIooZhrh9q7gclTl8en6N9NmnqUwRQ==}
     dev: true
 
-  /vite-plugin-istanbul/2.3.0:
-    resolution: {integrity: sha512-KHfnqEHHsC27TpRwsM+0InL1bAUmT6/drT10+q8ittcWVrzNUKKvyKn6Dmrqg6gKakoh3Hd+z3NvpbprBLqVRQ==}
+  /vite-plugin-istanbul/2.4.0:
+    resolution: {integrity: sha512-Oq2FcZZcxtMVLtkG3SPi3M+OMBwt8J765+1mT6+R2K1VKpmfZhqZnsISgSrFNvUjCEcXko/bKrwqPUp0Jz+dtA==}
     dependencies:
+      chalk: 4.1.2
       istanbul-lib-instrument: 4.0.3
       test-exclude: 6.0.0
     transitivePeerDependencies:

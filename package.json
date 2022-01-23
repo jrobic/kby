@@ -10,8 +10,10 @@
     "build": "turbo run build",
     "start": "turbo run start --parallel",
     "dev": "turbo run dev --parallel",
+    "dev:codegen": "turbo run dev:codegen --parallel",
     "lint": "turbo run lint",
     "schema": "turbo run schema",
+    "codegen": "turbo run codegen",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
     "test:hook": "turbo run test:hook",
@@ -80,6 +82,12 @@
         "cache": false
       },
       "schema": {
+        "cache": false
+      },
+      "codegen": {
+        "cache": false
+      },
+      "dev:codegen": {
         "cache": false
       }
     }

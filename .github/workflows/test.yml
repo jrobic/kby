@@ -1,4 +1,4 @@
-name: 💚. Test and Build
+name: Test and Deploy
 on:
   push:
     branches:
@@ -21,21 +21,21 @@ on:
       - "*.todo"
 jobs:
   lint:
-    name: ⬣. Lint (${{ matrix.node }})
+    name: Lint (${{ matrix.node }})
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node: ["16.x"]
 
     steps:
-      - name: 🛑. Cancel Previous Runs
+      - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
         with:
           fetch-depth: "50"
 
-      - name: ⚡️. Install Deps
+      - name: Install Deps
         uses: ./.github/deps
         with:
           node-version: ${{ matrix.node }}
@@ -43,24 +43,24 @@ jobs:
       - name: Codegen
         run: pnpm run codegen --filter="web"
 
-      - name: 🔬. Lint
+      - name: Lint
         run: pnpm run lint
 
   test-unit:
-    name: 🃏. Test Unit (${{ matrix.node }})
+    name: Test Unit (${{ matrix.node }})
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node: ["16.x"]
     steps:
-      - name: 🛑. Cancel Previous Runs
+      - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
         with:
           fetch-depth: "50"
 
-      - name: ⚡️. Install Deps
+      - name: Install Deps
         uses: ./.github/deps
         with:
           node-version: ${{ matrix.node }}
@@ -68,7 +68,7 @@ jobs:
       - name: Codegen
         run: pnpm run codegen --filter="web"
 
-      - name: 👷. Test
+      - name: Test
         run: pnpm run test:cov
 
       - uses: codecov/codecov-action@v2
@@ -93,49 +93,49 @@ jobs:
           name: ui
 
   build:
-    name: 👷. Build (${{ matrix.node }})
+    name: Build (${{ matrix.node }})
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node: ["16.x"]
     steps:
-      - name: 🛑. Cancel Previous Runs
+      - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
-      - name: ⬇️ Checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v2
         with:
           fetch-depth: "50"
 
-      - name: ⚡️. Install Deps
+      - name: Install Deps
         uses: ./.github/deps
         with:
           node-version: ${{ matrix.node }}
 
-      - name: 👷. Build
+      - name: Build
         run: pnpm run schema && pnpm run build
 
   e2e:
-    name: ⚫️. Cypress
+    name: Cypress
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🛑. Cancel Previous Runs
+      - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
         with:
           fetch-depth: "50"
 
-      - name: ⚡️. Install Deps
+      - name: Install Deps
         uses: ./.github/deps
 
-      - name: 👷. Build
+      - name: Build
         run: pnpm run schema && pnpm run build
 
-      - name: 🏄 Copy test env vars (apps/web)
+      - name: Copy test env vars (apps/web)
         run: cp apps/web/.env.example apps/web/.env
 
-      - name: 🌳. Cypress run
+      - name: Cypress run
         uses: cypress-io/github-action@v2
         continue-on-error: true
         with:
@@ -151,3 +151,41 @@ jobs:
           files: packages/e2e/coverage/clover.xml
           flags: e2e
           name: e2e
+
+  deploy-staging-web:
+    needs: [lint, test-unit, build, e2e]
+    environment:
+      name: staging
+      url: ${{ steps.vercel-action-staging.outputs.preview-url }}
+    name: Deploy Web App to Staging
+    runs-on: ubuntu-latest
+    # if: ${{ github.event_name == "push" && github.ref == "refs/heads/develop" }}
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.1
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: "50"
+
+      - name: Install Deps
+        uses: ./.github/deps
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Build
+        run: pnpm run codegen -- --scope="@spv/web" && pnpm run build -- --scope="@spv/web" --include-dependencies
+        env:
+          KBY_API_GRAPHQL_URL: ""
+
+      - name: Deploy Web App staging
+        uses: amondnet/vercel-action@v19
+        id: vercel-action-staging
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          working-directory: apps/web
+          vercel-args: "--prod"
+          alias-domains: |
+            staging-kby.vercel.app

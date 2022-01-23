@@ -1,4 +1,4 @@
-name: 🔍️. GitGuardian scan
+name: GitGuardian scan
 
 on:
   push:

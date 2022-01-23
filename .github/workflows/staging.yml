@@ -1,0 +1,41 @@
+name: Deploy Staging
+on:
+  workflow_run:
+    workflows: [Test and Build]
+    branches: [develop, chore/vercel]
+    types:
+      - completed
+
+jobs:
+  web-staging:
+    needs: [lint, test-unit, build, e2e]
+    environment:
+      name: staging
+      url: ${{ steps.vercel-action-staging.outputs.preview-url }}
+    name: 👷. Deploy Web App on Staging
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑. Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.1
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: "50"
+
+      - name: ⚡️. Install Deps
+        uses: ./.github/deps
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: 👷. Build
+        run: pnpm run schema -- --scope="@spv/web" && pnpm run build -- --scope="@spv/web" --include-dependencies
+        env:
+          KBY_API_GRAPHQL_URL: ""
+
+      - name: 🚀. Deploy Web App staging
+        uses: amondnet/vercel-action@v19
+        id: vercel-action-staging
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}

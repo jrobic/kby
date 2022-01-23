@@ -14,7 +14,7 @@ export function App() {
     <div className="App">
       <header className="App-header">
         <p>{data?.hello}</p>
-        <Button label="Boop" primary />
+        <Button label="Boop" primary size="small" />
       </header>
     </div>
   );

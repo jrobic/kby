@@ -17,7 +17,7 @@ async function bootstrap() {
   const configService = app.get(ConfigService);
   const nestConfig = configService.get<NestConfig>('nest');
 
-  await app.listen(process.env.PORT || nestConfig?.port || 3000);
+  await app.listen(process.env.PORT || nestConfig?.port || 3000, '0.0.0.0');
 }
 
 bootstrap();

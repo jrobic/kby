@@ -1,0 +1,16 @@
+**
+
+!apps/**
+!packages/**
+!package.json
+!tsconfig*.json
+!package-lock.json
+!pnpm*
+!.npmrc
+
+**/.env*
+**/*~
+**/node_modules
+**/dist
+**/build
+**/tsconfig.tsbuildinfo

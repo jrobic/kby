@@ -30,7 +30,7 @@ jobs:
     steps:
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
-      - name: ⬇️ Checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v2
         with:
           fetch-depth: "50"
@@ -55,7 +55,7 @@ jobs:
     steps:
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
-      - name: ⬇️ Checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v2
         with:
           fetch-depth: "50"
@@ -121,7 +121,7 @@ jobs:
     steps:
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
-      - name: ⬇️ Checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v2
         with:
           fetch-depth: "50"
@@ -152,8 +152,96 @@ jobs:
           flags: e2e
           name: e2e
 
-  deploy-staging-web:
+  deploy-staging-api:
     needs: [lint, test-unit, build, e2e]
+    environment:
+      name: staging
+    name: Deploy API to Staging
+    # permissions:
+    #   contents: read
+    #   packages: write
+    #   # This is used to complete the identity challenge
+    #   # with sigstore/fulcio when running outside of PRs.
+    #   id-token: write
+    outputs:
+      api-url: ${{ steps.deploy-cloud-run.outputs.url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.1
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: "50"
+
+      - name: Set outputs
+        id: vars
+        run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+
+      - id: "auth"
+        uses: "google-github-actions/auth@v0"
+        with:
+          credentials_json: "${{ secrets.GCP_CREDENTIALS }}"
+
+      - name: "Set up Cloud SDK"
+        id: deploy-cloud-run
+        uses: "google-github-actions/setup-gcloud@v0"
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Configure Docker & Gcloud
+        run: |
+          gcloud config set project ${{ secrets.GCP_PROJECT }}
+          gcloud config set run/region ${{ secrets.GCP_REGION }}
+          gcloud auth configure-docker
+
+      - name: Login to GCR
+        uses: docker/login-action@v1
+        with:
+          registry: eu.gcr.io
+          username: _json_key
+          password: ${{ secrets.GCP_CREDENTIALS }}
+
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          # push: ${{ github.event_name != 'pull_request' }}
+          push: true
+          tags: eu.gcr.io/${{ secrets.GCP_PROJECT }}/${{ secrets.GCP_APPLICATION }}:${{ steps.vars.outputs.sha_short }}
+          # target: api
+
+      # - name: Build & Push
+      #   run: |
+      #     docker build -f Dockerfile --tag eu.gcr.io/${{ secrets.GCP_PROJECT }}/${{ secrets.GCP_APPLICATION }}:${{ steps.vars.outputs.sha_short }} .
+      #     docker image push eu.gcr.io/${{ secrets.GCP_PROJECT }}/${{ secrets.GCP_APPLICATION }}:${{ steps.vars.outputs.sha_short }}
+
+      - id: deploy
+        uses: "google-github-actions/deploy-cloudrun@v0"
+        with:
+          service: ${{ secrets.GCP_APPLICATION }}
+          image: eu.gcr.io/${{ secrets.GCP_PROJECT }}/${{ secrets.GCP_APPLICATION }}:${{ steps.vars.outputs.sha_short }}
+          region: ${{ secrets.GCP_REGION }}
+
+      - name: "Use output"
+        run: |
+          sleep 15
+          curl "${{ steps.deploy.outputs.url }}/health" || true
+          echo ${{ steps.deploy.outputs.url }} > api_url.txt
+
+      - name: Temporarily save api-url
+        uses: actions/upload-artifact@v2
+        with:
+          name: api-url-artifact-${{ github.run_id }}
+          path: api_url.txt
+          retention-days: 1
+
+  deploy-staging-web:
+    needs: [deploy-staging-api]
     environment:
       name: staging
       url: ${{ steps.vercel-action-staging.outputs.preview-url }}
@@ -163,10 +251,27 @@ jobs:
     steps:
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
-      - name: ⬇️ Checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v2
         with:
           fetch-depth: "50"
+
+      - uses: actions/download-artifact@master
+        with:
+          name: api-url-artifact-${{ github.run_id }}
+          # path: api_url.txt
+
+      - name: Display structure of downloaded files
+        run: ls -R
+
+      - name: Set API_URL env
+        run: echo "API_URL=$(cat api_url.txt)" >> $GITHUB_ENV
+
+      - name: Check API_URL env
+        run: echo "${{ env.API_URL }} - $API_URL"
+
+      - name: "Check Api URL"
+        run: curl "$(cat api_url.txt)/health"
 
       - name: Install Deps
         uses: ./.github/deps
@@ -176,7 +281,7 @@ jobs:
       - name: Build
         run: pnpm run codegen -- --scope="@spv/web" && pnpm run build -- --scope="@spv/web" --include-dependencies
         env:
-          KBY_API_GRAPHQL_URL: ""
+          KBY_API_GRAPHQL_URL: ${{ env.API_URL }}/graphql
 
       - name: Deploy Web App staging
         uses: amondnet/vercel-action@v19

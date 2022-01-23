@@ -1,6 +1,6 @@
 Apps:
   web:
-    ☐ Install Tailwindcss v3
+    ✔ Install Tailwindcss v3 @done(22-01-23 13:01)
     ✔ React Query @done(21-12-27 16:48)
     ✔ GraphQL Codegen @done(21-12-27 16:48)
   mobile (nth):

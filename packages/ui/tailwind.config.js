@@ -1,6 +1,5 @@
 /* eslint-disable global-require */
 module.exports = {
-  mode: undefined,
   content: ["./src/**/*.+(js|ts|tsx|mdx|md)"],
   theme: {
     extend: {},

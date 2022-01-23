@@ -29,4 +29,4 @@
  * If omitted, Tailwind will append these classes to the very end of
  * your stylesheet by default.
  */
-@import "tailwindcss/screens";
+@import "tailwindcss/variants";

@@ -1,2 +1,7 @@
 /* eslint-disable global-require */
-module.exports = require("@kby/ui/tailwind.config");
+const config = require("@kby/ui/tailwind.config");
+
+module.exports = {
+  ...config,
+  content: [...config.content, "./src/**/*.+(js|ts|tsx|mdx|md)"],
+};

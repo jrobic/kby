@@ -138,14 +138,14 @@ importers:
       '@kby/scripts': workspace:*
       '@testing-library/cypress': 8.0.2
       '@types/node': 16.11.21
-      cypress: 9.3.1
+      cypress: 9.4.1
       typescript: 4.5.5
     devDependencies:
-      '@cypress/code-coverage': 3.9.12_cypress@9.3.1
+      '@cypress/code-coverage': 3.9.12_cypress@9.4.1
       '@kby/scripts': link:../scripts
-      '@testing-library/cypress': 8.0.2_cypress@9.3.1
+      '@testing-library/cypress': 8.0.2_cypress@9.4.1
       '@types/node': 16.11.21
-      cypress: 9.3.1
+      cypress: 9.4.1
       typescript: 4.5.5
 
   packages/graphql:
@@ -3716,14 +3716,14 @@ packages:
       - supports-color
     dev: true
 
-  /@cypress/code-coverage/3.9.12_cypress@9.3.1:
+  /@cypress/code-coverage/3.9.12_cypress@9.4.1:
     resolution: {integrity: sha512-2QuDSQ2ovz2ZsbQImM917q+9JmEq4afC4kpgHe2o3rTQxUrs7CdHM84rT8XKl0gJIXmbMcNq2rZqe40/eFmCFw==}
     peerDependencies:
       cypress: '*'
     dependencies:
       '@cypress/browserify-preprocessor': 3.0.2
       chalk: 4.1.2
-      cypress: 9.3.1
+      cypress: 9.4.1
       dayjs: 1.10.7
       debug: 4.3.3
       execa: 4.1.0
@@ -6837,7 +6837,7 @@ packages:
       tailwindcss: 3.0.18_ef48b3b8837f8a23677bffe8f9cd866d
     dev: true
 
-  /@testing-library/cypress/8.0.2_cypress@9.3.1:
+  /@testing-library/cypress/8.0.2_cypress@9.4.1:
     resolution: {integrity: sha512-KVdm7n37sg/A4e3wKMD4zUl0NpzzVhx06V9Tf0hZHZ7nrZ4yFva6Zwg2EFF1VzHkEfN/ahUzRtT1qiW+vuWnJw==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -6845,7 +6845,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.16.5
       '@testing-library/dom': 8.11.1
-      cypress: 9.3.1
+      cypress: 9.4.1
     dev: true
 
   /@testing-library/dom/8.11.1:
@@ -10330,8 +10330,8 @@ packages:
     resolution: {integrity: sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=}
     dev: true
 
-  /cypress/9.3.1:
-    resolution: {integrity: sha512-BODdPesxX6bkVUnH8BVsV8I/jn57zQtO1FEOUTiuG2us3kslW7g0tcuwiny7CKCmJUZz8S/D587ppC+s58a+5Q==}
+  /cypress/9.4.1:
+    resolution: {integrity: sha512-+JgMG9uT+QFx97JU9kOHE3jO3+0UdkQ9H1oCBiC7A74qme7Jkdy2sYDBCPjjGczutnWnGUTMRlwiNMP/Uq6LrQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     requiresBuild: true
@@ -10373,10 +10373,10 @@ packages:
       pretty-bytes: 5.6.0
       proxy-from-env: 1.0.0
       request-progress: 3.0.0
+      semver: 7.3.5
       supports-color: 8.1.1
       tmp: 0.2.1
       untildify: 4.0.0
-      url: 0.11.0
       yauzl: 2.10.0
     dev: true
 
@@ -14907,7 +14907,7 @@ packages:
       log-update: 4.0.0
       p-map: 4.0.0
       rfdc: 1.3.0
-      rxjs: 7.5.1
+      rxjs: 7.5.2
       through: 2.3.8
       wrap-ansi: 7.0.0
     dev: true
@@ -17757,7 +17757,6 @@ packages:
     resolution: {integrity: sha512-PwDt186XaL3QN5qXj/H9DGyHhP3/RYYgZZwqBv9Tv8rsAaiwFH1IsJJlcgD37J7UW5a6O67qX0KWKS3/pu0m4w==}
     dependencies:
       tslib: 2.3.1
-    dev: false
 
   /safe-buffer/5.1.1:
     resolution: {integrity: sha512-kKvNJn6Mm93gAczWVJg7wH+wGYWNrDHdWvpUmHyEsgCtIwwo3bqPtV4tR5tuPaUhTOo/kvhVwd8XwwOllGYkbg==}

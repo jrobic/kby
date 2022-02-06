@@ -103,7 +103,7 @@ importers:
       vite: 2.7.13
       vite-plugin-env-compatible: 1.1.1
       vite-plugin-istanbul: 2.4.0
-      vite-tsconfig-paths: 3.3.17
+      vite-tsconfig-paths: 3.4.0
     dependencies:
       '@kby/ui': link:../../packages/ui
       graphql-request: 3.7.0
@@ -130,7 +130,7 @@ importers:
       vite: 2.7.13
       vite-plugin-env-compatible: 1.1.1
       vite-plugin-istanbul: 2.4.0
-      vite-tsconfig-paths: 3.3.17_vite@2.7.13
+      vite-tsconfig-paths: 3.4.0_vite@2.7.13
 
   packages/e2e:
     specifiers:
@@ -19787,8 +19787,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-tsconfig-paths/3.3.17_vite@2.7.13:
-    resolution: {integrity: sha512-wx+rfC53moVLxMBj2EApJZgY6HtvWUFVZ4dBxNGYBxSSqU6UaHdKlcOxrfGDxyTGtYEr9beWCryHn18C4EtZkg==}
+  /vite-tsconfig-paths/3.4.0_vite@2.7.13:
+    resolution: {integrity: sha512-os+oAdJxkZvNLmisVQ76eDdCWC3aH4bKTy3EXI5oJi//zQ0G+qJfUeFR6Need4iyzL/Xus9R7AECF/YfGS0ZEw==}
     peerDependencies:
       vite: '>2.0.0-0'
     dependencies:

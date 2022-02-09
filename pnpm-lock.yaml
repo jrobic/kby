@@ -151,18 +151,18 @@ importers:
   packages/graphql:
     specifiers:
       '@graphql-codegen/add': 3.1.1
-      '@graphql-codegen/cli': 2.5.0
+      '@graphql-codegen/cli': 2.6.0
       '@graphql-codegen/typescript': 2.4.3
-      '@graphql-codegen/typescript-operations': 2.2.4
-      '@graphql-codegen/typescript-react-query': 3.5.1
+      '@graphql-codegen/typescript-operations': 2.3.0
+      '@graphql-codegen/typescript-react-query': 3.5.2
       graphql: 15.8.0
       typescript: 4.5.5
     devDependencies:
       '@graphql-codegen/add': 3.1.1_graphql@15.8.0
-      '@graphql-codegen/cli': 2.5.0_graphql@15.8.0+typescript@4.5.5
+      '@graphql-codegen/cli': 2.6.0_graphql@15.8.0+typescript@4.5.5
       '@graphql-codegen/typescript': 2.4.3_graphql@15.8.0
-      '@graphql-codegen/typescript-operations': 2.2.4_graphql@15.8.0
-      '@graphql-codegen/typescript-react-query': 3.5.1_graphql@15.8.0
+      '@graphql-codegen/typescript-operations': 2.3.0_graphql@15.8.0
+      '@graphql-codegen/typescript-react-query': 3.5.2_graphql@15.8.0
       graphql: 15.8.0
       typescript: 4.5.5
 
@@ -4039,8 +4039,8 @@ packages:
       tslib: 2.3.1
     dev: true
 
-  /@graphql-codegen/cli/2.5.0_graphql@15.8.0+typescript@4.5.5:
-    resolution: {integrity: sha512-rgzk+Pl14ZQ84rWee1kuFYsRfPmiOqdq/Ix3ZcDawzkx0HuSHrHpNISI5RQ05oP4IHbwqm02o6ia3TKo3kV9SA==}
+  /@graphql-codegen/cli/2.6.0_graphql@15.8.0+typescript@4.5.5:
+    resolution: {integrity: sha512-2Bsf2XzwccVJSam8grrAROn3sk5mris8kx4cYEDvBHekEbn6I4xmBDeVjX6y6ajVfyZniJCAZdc7XxRHje8wYg==}
     hasBin: true
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
@@ -4147,8 +4147,8 @@ packages:
       tslib: 2.3.1
     dev: true
 
-  /@graphql-codegen/typescript-operations/2.2.4_graphql@15.8.0:
-    resolution: {integrity: sha512-PAunOSdl4avsaGLTBxZkxOBQNfp9bmobBOX5p6q99NMYwoXsmtyu0mD8jIbzM+LMbxrskNxKJ1sywZ11aYGCMA==}
+  /@graphql-codegen/typescript-operations/2.3.0_graphql@15.8.0:
+    resolution: {integrity: sha512-CIiNSNWKs3PT6UNC8aVvUXXcb6fa5u9NhHW6Qmfx4fXse9JKn6zwNdJio9cU/HfjwnWDCx1yWO+ngMEg3Lec4A==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
@@ -4162,8 +4162,8 @@ packages:
       - supports-color
     dev: true
 
-  /@graphql-codegen/typescript-react-query/3.5.1_graphql@15.8.0:
-    resolution: {integrity: sha512-Gbexml4ldbXlxbEkeZ5mIW8POhiqlJgZFkJs+xgVdAIl3MoV/zYLfYwKqj9ZZsL88tjHsICCADETjppFJOMIsA==}
+  /@graphql-codegen/typescript-react-query/3.5.2_graphql@15.8.0:
+    resolution: {integrity: sha512-Ftn2dot0Vd7DrnsaQTNl8VDwcVX0n8QRSTlM9fwlAxoLVyObeDb53pIYTkPijpAGfDwXCfnBtUbhSNJjpPUvGQ==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:

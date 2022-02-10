@@ -98,7 +98,7 @@ importers:
       react-query: 3.34.11
       rollup-plugin-visualizer: 5.5.4
       serve: 13.0.2
-      tailwindcss: 3.0.20
+      tailwindcss: 3.0.21
       typescript: 4.5.5
       vite: 2.8.0
       vite-plugin-env-compatible: 1.1.1
@@ -125,7 +125,7 @@ importers:
       postcss-import: 14.0.2_postcss@8.4.6
       rollup-plugin-visualizer: 5.5.4
       serve: 13.0.2
-      tailwindcss: 3.0.20_816af27821d2d636978db5e3388bb3b7
+      tailwindcss: 3.0.21_833e1018ad0d7954aa80c53675939269
       typescript: 4.5.5
       vite: 2.8.0
       vite-plugin-env-compatible: 1.1.1
@@ -251,7 +251,7 @@ importers:
       react: ^17.0.2
       react-dom: ^17.0.2
       storybook-dark-mode: 1.0.8
-      tailwindcss: 3.0.20
+      tailwindcss: 3.0.21
       typescript: 4.5.5
     dependencies:
       clsx: 1.1.1
@@ -266,10 +266,10 @@ importers:
       '@storybook/addon-links': 6.4.18_react-dom@17.0.2+react@17.0.2
       '@storybook/addon-postcss': 2.0.0
       '@storybook/react': 6.4.18_3ad05d51da6be631d2022cf1b96197fb
-      '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@3.0.20
-      '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.20
-      '@tailwindcss/line-clamp': 0.3.1_tailwindcss@3.0.20
-      '@tailwindcss/typography': 0.5.1_tailwindcss@3.0.20
+      '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@3.0.21
+      '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.21
+      '@tailwindcss/line-clamp': 0.3.1_tailwindcss@3.0.21
+      '@tailwindcss/typography': 0.5.1_tailwindcss@3.0.21
       '@testing-library/jest-dom': 5.16.2
       '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
       '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
@@ -281,7 +281,7 @@ importers:
       postcss: 8.4.6
       postcss-import: 14.0.2_postcss@8.4.6
       storybook-dark-mode: 1.0.8
-      tailwindcss: 3.0.20_816af27821d2d636978db5e3388bb3b7
+      tailwindcss: 3.0.21_833e1018ad0d7954aa80c53675939269
       typescript: 4.5.5
 
 packages:
@@ -6962,32 +6962,32 @@ packages:
       defer-to-connect: 1.1.3
     dev: true
 
-  /@tailwindcss/aspect-ratio/0.4.0_tailwindcss@3.0.20:
+  /@tailwindcss/aspect-ratio/0.4.0_tailwindcss@3.0.21:
     resolution: {integrity: sha512-WJu0I4PpqNPuutpaA9zDUq2JXR+lorZ7PbLcKNLmb6GL9/HLfC7w3CRsMhJF4BbYd/lkY6CfXOvkYpuGnZfkpQ==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 3.0.20_816af27821d2d636978db5e3388bb3b7
+      tailwindcss: 3.0.21_833e1018ad0d7954aa80c53675939269
     dev: true
 
-  /@tailwindcss/forms/0.4.0_tailwindcss@3.0.20:
+  /@tailwindcss/forms/0.4.0_tailwindcss@3.0.21:
     resolution: {integrity: sha512-DeaQBx6EgEeuZPQACvC+mKneJsD8am1uiJugjgQK1+/Vt+Ai0GpFBC2T2fqnUad71WgOxyrZPE6BG1VaI6YqfQ==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.3
-      tailwindcss: 3.0.20_816af27821d2d636978db5e3388bb3b7
+      tailwindcss: 3.0.21_833e1018ad0d7954aa80c53675939269
     dev: true
 
-  /@tailwindcss/line-clamp/0.3.1_tailwindcss@3.0.20:
+  /@tailwindcss/line-clamp/0.3.1_tailwindcss@3.0.21:
     resolution: {integrity: sha512-pNr0T8LAc3TUx/gxCfQZRe9NB2dPEo/cedPHzUGIPxqDMhgjwNm6jYxww4W5l0zAsAddxr+XfZcqttGiFDgrGg==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 3.0.20_816af27821d2d636978db5e3388bb3b7
+      tailwindcss: 3.0.21_833e1018ad0d7954aa80c53675939269
     dev: true
 
-  /@tailwindcss/typography/0.5.1_tailwindcss@3.0.20:
+  /@tailwindcss/typography/0.5.1_tailwindcss@3.0.21:
     resolution: {integrity: sha512-AmSzZSgLhHKlILKduU+PKBTHL6c+al82syZlRid1xgmlWwXagLigO+O++B4C0scpMfzW//f/3YCRcwwEHWoU3w==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || insiders'
@@ -6995,7 +6995,7 @@ packages:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
-      tailwindcss: 3.0.20_816af27821d2d636978db5e3388bb3b7
+      tailwindcss: 3.0.21_833e1018ad0d7954aa80c53675939269
     dev: true
 
   /@testing-library/cypress/8.0.2_cypress@9.4.1:
@@ -16883,15 +16883,6 @@ packages:
       fast-diff: 1.2.0
     dev: false
 
-  /prettier-plugin-tailwindcss/0.1.7_prettier@2.5.1:
-    resolution: {integrity: sha512-tmBr45hCLuit2Cz9Pwow0/Jl1bGivYGsfcF29O+3sKcE++ybjz9dfie565S3ZsvAeV8uYer9SRMBWDsHPly2Lg==}
-    engines: {node: '>=12.17.0'}
-    peerDependencies:
-      prettier: '>=2.2.0'
-    dependencies:
-      prettier: 2.5.1
-    dev: true
-
   /prettier/2.3.0:
     resolution: {integrity: sha512-kXtO4s0Lz/DW/IJ9QdWhAf7/NmPWQXkFr/r/WkR3vyI+0v8amTDxiaQSLzs8NBlytfLWX/7uQUMIW677yLKl4w==}
     engines: {node: '>=10.13.0'}
@@ -18965,8 +18956,8 @@ packages:
       acorn-node: 1.8.2
     dev: true
 
-  /tailwindcss/3.0.20_816af27821d2d636978db5e3388bb3b7:
-    resolution: {integrity: sha512-Mdo5XMsEkHhZNgh8NzXOEwI9L4WAS9NnnhCWbWWhVDaNZ1bqcHvbybosbmW6CetrCuCgMtDeByQq4trSka7irQ==}
+  /tailwindcss/3.0.21_833e1018ad0d7954aa80c53675939269:
+    resolution: {integrity: sha512-PGTiaBu/K4QlzjKlLgtz6nVYlrmhy6INPMKYb6RHX18/VXwygFbRdAlJGl2NfXabTQOP62ttKwjQviWLKQuWrA==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
@@ -18993,11 +18984,9 @@ packages:
       postcss-nested: 5.0.6_postcss@8.4.6
       postcss-selector-parser: 6.0.9
       postcss-value-parser: 4.2.0
-      prettier-plugin-tailwindcss: 0.1.7_prettier@2.5.1
       quick-lru: 5.1.1
       resolve: 1.22.0
     transitivePeerDependencies:
-      - prettier
       - ts-node
     dev: true
 

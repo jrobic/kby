@@ -34,7 +34,7 @@ importers:
       '@nestjs/testing': 8.2.6
       '@types/express': 4.17.13
       '@types/jest': 27.4.0
-      '@types/node': 16.11.22
+      '@types/node': 16.11.24
       '@types/supertest': 2.0.11
       apollo-server-fastify: 3.6.2
       fast-glob: 3.2.11
@@ -67,13 +67,13 @@ importers:
       '@nestjs/testing': 8.2.6_b893ca8083ee374883b6d648098a9aeb
       '@types/express': 4.17.13
       '@types/jest': 27.4.0
-      '@types/node': 16.11.22
+      '@types/node': 16.11.24
       '@types/supertest': 2.0.11
       fast-glob: 3.2.11
       source-map-support: 0.5.21
       supertest: 6.2.2
       ts-loader: 9.2.6_typescript@4.5.5
-      ts-node: 10.5.0_247b6ed5e900a7cb1f087e65be0c3da9
+      ts-node: 10.5.0_8909f72e9dc4fe10ad28f9faadc9a4a1
       tsconfig-paths: 3.12.0
       typescript: 4.5.5
 
@@ -137,14 +137,14 @@ importers:
       '@cypress/code-coverage': 3.9.12
       '@kby/scripts': workspace:*
       '@testing-library/cypress': 8.0.2
-      '@types/node': 16.11.22
+      '@types/node': 16.11.24
       cypress: 9.4.1
       typescript: 4.5.5
     devDependencies:
       '@cypress/code-coverage': 3.9.12_cypress@9.4.1
       '@kby/scripts': link:../scripts
       '@testing-library/cypress': 8.0.2_cypress@9.4.1
-      '@types/node': 16.11.22
+      '@types/node': 16.11.24
       cypress: 9.4.1
       typescript: 4.5.5
 
@@ -169,7 +169,7 @@ importers:
   packages/scripts:
     specifiers:
       '@types/jest': 27.4.0
-      '@types/node': 16.11.22
+      '@types/node': 16.11.24
       '@typescript-eslint/eslint-plugin': ^5.7.0
       '@typescript-eslint/parser': ^5.7.0
       camelcase: ^6.2.1
@@ -220,7 +220,7 @@ importers:
       jest-watch-typeahead: 1.0.0_jest@27.4.5
     devDependencies:
       '@types/jest': 27.4.0
-      '@types/node': 16.11.22
+      '@types/node': 16.11.24
       ts-jest: 27.1.3_@types+jest@27.4.0+jest@27.4.5
 
   packages/ui:
@@ -7306,8 +7306,8 @@ packages:
     resolution: {integrity: sha512-GtTH2crF4MtOIrrAa+jgTV9JX/PfoUCYr6MiZw7O/dkZu5b6gm5dc1nAL0jwGo4ortSBBtGyeVaxdC8X6V+pLg==}
     dev: true
 
-  /@types/node/16.11.22:
-    resolution: {integrity: sha512-DYNtJWauMQ9RNpesl4aVothr97/tIJM8HbyOXJ0AYT1Z2bEjLHyfjOBPAQQVMLf8h3kSShYfNk8Wnto8B2zHUA==}
+  /@types/node/16.11.24:
+    resolution: {integrity: sha512-Ezv33Rl4mIi6YdSHfIRNBd4Q9kUe5okiaw/ikvJiJDmuQZNW5kfdg7+oQPF8NO6sTcr3woIpj3jANzTXdvEZXA==}
     dev: true
 
   /@types/node/17.0.2:
@@ -19446,7 +19446,7 @@ packages:
       yn: 3.1.1
     dev: true
 
-  /ts-node/10.5.0_247b6ed5e900a7cb1f087e65be0c3da9:
+  /ts-node/10.5.0_8909f72e9dc4fe10ad28f9faadc9a4a1:
     resolution: {integrity: sha512-6kEJKwVxAJ35W4akuiysfKwKmjkbYxwQMTBaAxo9KKAx/Yd26mPUyhGz3ji+EsJoAgrLqVsYHNuuYwQe22lbtw==}
     hasBin: true
     peerDependencies:
@@ -19465,7 +19465,7 @@ packages:
       '@tsconfig/node12': 1.0.9
       '@tsconfig/node14': 1.0.1
       '@tsconfig/node16': 1.0.2
-      '@types/node': 16.11.22
+      '@types/node': 16.11.24
       acorn: 8.6.0
       acorn-walk: 8.2.0
       arg: 4.1.3

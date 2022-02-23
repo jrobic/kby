@@ -33,7 +33,7 @@ importers:
       '@nestjs/terminus': 8.0.4
       '@nestjs/testing': 8.3.1
       '@types/express': 4.17.13
-      '@types/jest': 27.4.0
+      '@types/jest': 27.4.1
       '@types/node': 16.11.25
       '@types/supertest': 2.0.11
       apollo-server-fastify: 3.6.2
@@ -66,7 +66,7 @@ importers:
       '@nestjs/schematics': 8.0.6_typescript@4.5.5
       '@nestjs/testing': 8.3.1_b893ca8083ee374883b6d648098a9aeb
       '@types/express': 4.17.13
-      '@types/jest': 27.4.0
+      '@types/jest': 27.4.1
       '@types/node': 16.11.25
       '@types/supertest': 2.0.11
       fast-glob: 3.2.11
@@ -168,7 +168,7 @@ importers:
 
   packages/scripts:
     specifiers:
-      '@types/jest': 27.4.0
+      '@types/jest': 27.4.1
       '@types/node': 16.11.25
       '@typescript-eslint/eslint-plugin': ^5.7.0
       '@typescript-eslint/parser': ^5.7.0
@@ -219,9 +219,9 @@ importers:
       jest-watch-select-projects: 2.0.0
       jest-watch-typeahead: 1.0.0_jest@27.4.5
     devDependencies:
-      '@types/jest': 27.4.0
+      '@types/jest': 27.4.1
       '@types/node': 16.11.25
-      ts-jest: 27.1.3_@types+jest@27.4.0+jest@27.4.5
+      ts-jest: 27.1.3_@types+jest@27.4.1+jest@27.4.5
 
   packages/ui:
     specifiers:
@@ -7334,6 +7334,13 @@ packages:
     resolution: {integrity: sha512-gHl8XuC1RZ8H2j5sHv/JqsaxXkDDM9iDOgu0Wp8sjs4u/snb2PVehyWXJPr+ORA0RPpgw231mnutWI1+0hgjIQ==}
     dependencies:
       jest-diff: 27.4.2
+      pretty-format: 27.4.2
+    dev: true
+
+  /@types/jest/27.4.1:
+    resolution: {integrity: sha512-23iPJADSmicDVrWk+HT58LMJtzLAnB2AgIzplQuq/bSrGaxCrlvRFjGbXmamnnk/mAmCdLStiGqggu28ocUyiw==}
+    dependencies:
+      jest-matcher-utils: 27.4.2
       pretty-format: 27.4.2
     dev: true
 
@@ -14475,7 +14482,6 @@ packages:
       jest-diff: 27.4.2
       jest-get-type: 27.4.0
       pretty-format: 27.4.2
-    dev: false
 
   /jest-message-util/27.4.2:
     resolution: {integrity: sha512-OMRqRNd9E0DkBLZpFtZkAGYOXl6ZpoMtQJWTAREJKDOFa0M6ptB7L67tp+cszMBkvSgKOhNtQp2Vbcz3ZZKo/w==}
@@ -19451,7 +19457,7 @@ packages:
     engines: {node: '>=6.10'}
     dev: true
 
-  /ts-jest/27.1.3_@types+jest@27.4.0+jest@27.4.5:
+  /ts-jest/27.1.3_@types+jest@27.4.1+jest@27.4.5:
     resolution: {integrity: sha512-6Nlura7s6uM9BVUAoqLH7JHyMXjz8gluryjpPXxr3IxZdAXnU6FhjvVLHFtfd1vsE1p8zD1OJfskkc0jhTSnkA==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
@@ -19472,7 +19478,7 @@ packages:
       esbuild:
         optional: true
     dependencies:
-      '@types/jest': 27.4.0
+      '@types/jest': 27.4.1
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
       jest: 27.4.5

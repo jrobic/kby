@@ -34,7 +34,7 @@ importers:
       '@nestjs/testing': 8.3.1
       '@types/express': 4.17.13
       '@types/jest': 27.4.1
-      '@types/node': 16.11.25
+      '@types/node': 16.11.26
       '@types/supertest': 2.0.11
       apollo-server-fastify: 3.6.2
       fast-glob: 3.2.11
@@ -67,13 +67,13 @@ importers:
       '@nestjs/testing': 8.3.1_b893ca8083ee374883b6d648098a9aeb
       '@types/express': 4.17.13
       '@types/jest': 27.4.1
-      '@types/node': 16.11.25
+      '@types/node': 16.11.26
       '@types/supertest': 2.0.11
       fast-glob: 3.2.11
       source-map-support: 0.5.21
       supertest: 6.2.2
       ts-loader: 9.2.6_typescript@4.5.5
-      ts-node: 10.5.0_ad16171857a0edcfc445c7bfcf336eb6
+      ts-node: 10.5.0_f94da96e4d78a751cdd66b59796b8fdd
       tsconfig-paths: 3.12.0
       typescript: 4.5.5
 
@@ -137,14 +137,14 @@ importers:
       '@cypress/code-coverage': 3.9.12
       '@kby/scripts': workspace:*
       '@testing-library/cypress': 8.0.2
-      '@types/node': 16.11.25
+      '@types/node': 16.11.26
       cypress: 9.5.0
       typescript: 4.5.5
     devDependencies:
       '@cypress/code-coverage': 3.9.12_cypress@9.5.0
       '@kby/scripts': link:../scripts
       '@testing-library/cypress': 8.0.2_cypress@9.5.0
-      '@types/node': 16.11.25
+      '@types/node': 16.11.26
       cypress: 9.5.0
       typescript: 4.5.5
 
@@ -169,7 +169,7 @@ importers:
   packages/scripts:
     specifiers:
       '@types/jest': 27.4.1
-      '@types/node': 16.11.25
+      '@types/node': 16.11.26
       '@typescript-eslint/eslint-plugin': ^5.7.0
       '@typescript-eslint/parser': ^5.7.0
       camelcase: ^6.2.1
@@ -220,7 +220,7 @@ importers:
       jest-watch-typeahead: 1.0.0_jest@27.4.5
     devDependencies:
       '@types/jest': 27.4.1
-      '@types/node': 16.11.25
+      '@types/node': 16.11.26
       ts-jest: 27.1.3_@types+jest@27.4.1+jest@27.4.5
 
   packages/ui:
@@ -7401,8 +7401,8 @@ packages:
     resolution: {integrity: sha512-GtTH2crF4MtOIrrAa+jgTV9JX/PfoUCYr6MiZw7O/dkZu5b6gm5dc1nAL0jwGo4ortSBBtGyeVaxdC8X6V+pLg==}
     dev: true
 
-  /@types/node/16.11.25:
-    resolution: {integrity: sha512-NrTwfD7L1RTc2qrHQD4RTTy4p0CO2LatKBEKEds3CaVuhoM/+DJzmWZl5f+ikR8cm8F5mfJxK+9rQq07gRiSjQ==}
+  /@types/node/16.11.26:
+    resolution: {integrity: sha512-GZ7bu5A6+4DtG7q9GsoHXy3ALcgeIHP4NnL0Vv2wu0uUB/yQex26v0tf6/na1mm0+bS9Uw+0DFex7aaKr2qawQ==}
     dev: true
 
   /@types/node/17.0.2:
@@ -19517,37 +19517,6 @@ packages:
     resolution: {integrity: sha512-DEQrfv6l7IvN2jlzc/VTdZJYsWUnQNCsueYjMkC/iXoEoi5fNan6MjeDqkvhfzbmHgdz9UxDUluX3V5HdjTydQ==}
     dev: true
 
-  /ts-node/10.5.0_ad16171857a0edcfc445c7bfcf336eb6:
-    resolution: {integrity: sha512-6kEJKwVxAJ35W4akuiysfKwKmjkbYxwQMTBaAxo9KKAx/Yd26mPUyhGz3ji+EsJoAgrLqVsYHNuuYwQe22lbtw==}
-    hasBin: true
-    peerDependencies:
-      '@swc/core': '>=1.2.50'
-      '@swc/wasm': '>=1.2.50'
-      '@types/node': '*'
-      typescript: '>=2.7'
-    peerDependenciesMeta:
-      '@swc/core':
-        optional: true
-      '@swc/wasm':
-        optional: true
-    dependencies:
-      '@cspotcode/source-map-support': 0.7.0
-      '@tsconfig/node10': 1.0.8
-      '@tsconfig/node12': 1.0.9
-      '@tsconfig/node14': 1.0.1
-      '@tsconfig/node16': 1.0.2
-      '@types/node': 16.11.25
-      acorn: 8.6.0
-      acorn-walk: 8.2.0
-      arg: 4.1.3
-      create-require: 1.1.1
-      diff: 4.0.2
-      make-error: 1.3.6
-      typescript: 4.5.5
-      v8-compile-cache-lib: 3.0.0
-      yn: 3.1.1
-    dev: true
-
   /ts-node/10.5.0_b3e4244192457cbf945d8449b1fa5769:
     resolution: {integrity: sha512-6kEJKwVxAJ35W4akuiysfKwKmjkbYxwQMTBaAxo9KKAx/Yd26mPUyhGz3ji+EsJoAgrLqVsYHNuuYwQe22lbtw==}
     hasBin: true
@@ -19568,6 +19537,37 @@ packages:
       '@tsconfig/node14': 1.0.1
       '@tsconfig/node16': 1.0.2
       '@types/node': 17.0.2
+      acorn: 8.6.0
+      acorn-walk: 8.2.0
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 4.5.5
+      v8-compile-cache-lib: 3.0.0
+      yn: 3.1.1
+    dev: true
+
+  /ts-node/10.5.0_f94da96e4d78a751cdd66b59796b8fdd:
+    resolution: {integrity: sha512-6kEJKwVxAJ35W4akuiysfKwKmjkbYxwQMTBaAxo9KKAx/Yd26mPUyhGz3ji+EsJoAgrLqVsYHNuuYwQe22lbtw==}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': '>=1.2.50'
+      '@swc/wasm': '>=1.2.50'
+      '@types/node': '*'
+      typescript: '>=2.7'
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      '@swc/wasm':
+        optional: true
+    dependencies:
+      '@cspotcode/source-map-support': 0.7.0
+      '@tsconfig/node10': 1.0.8
+      '@tsconfig/node12': 1.0.9
+      '@tsconfig/node14': 1.0.1
+      '@tsconfig/node16': 1.0.2
+      '@types/node': 16.11.26
       acorn: 8.6.0
       acorn-walk: 8.2.0
       arg: 4.1.3

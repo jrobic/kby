@@ -44,7 +44,7 @@ importers:
       source-map-support: 0.5.21
       supertest: 6.2.2
       ts-loader: 9.2.6
-      ts-node: 10.5.0
+      ts-node: 10.6.0
       tsconfig-paths: 3.12.0
       typescript: 4.6.2
     dependencies:
@@ -73,7 +73,7 @@ importers:
       source-map-support: 0.5.21
       supertest: 6.2.2
       ts-loader: 9.2.6_typescript@4.6.2
-      ts-node: 10.5.0_045cabcbf8818eda83522fe731c87088
+      ts-node: 10.6.0_045cabcbf8818eda83522fe731c87088
       tsconfig-paths: 3.12.0
       typescript: 4.6.2
 
@@ -100,7 +100,7 @@ importers:
       serve: 13.0.2
       tailwindcss: 3.0.23
       typescript: 4.6.2
-      vite: 2.8.5
+      vite: 2.8.6
       vite-plugin-env-compatible: 1.1.1
       vite-plugin-istanbul: 2.5.0
       vite-tsconfig-paths: 3.4.1
@@ -127,10 +127,10 @@ importers:
       serve: 13.0.2
       tailwindcss: 3.0.23_autoprefixer@10.4.2
       typescript: 4.6.2
-      vite: 2.8.5
+      vite: 2.8.6
       vite-plugin-env-compatible: 1.1.1
       vite-plugin-istanbul: 2.5.0
-      vite-tsconfig-paths: 3.4.1_vite@2.8.5
+      vite-tsconfig-paths: 3.4.1_vite@2.8.6
 
   packages/e2e:
     specifiers:
@@ -19517,37 +19517,6 @@ packages:
     resolution: {integrity: sha512-DEQrfv6l7IvN2jlzc/VTdZJYsWUnQNCsueYjMkC/iXoEoi5fNan6MjeDqkvhfzbmHgdz9UxDUluX3V5HdjTydQ==}
     dev: true
 
-  /ts-node/10.5.0_045cabcbf8818eda83522fe731c87088:
-    resolution: {integrity: sha512-6kEJKwVxAJ35W4akuiysfKwKmjkbYxwQMTBaAxo9KKAx/Yd26mPUyhGz3ji+EsJoAgrLqVsYHNuuYwQe22lbtw==}
-    hasBin: true
-    peerDependencies:
-      '@swc/core': '>=1.2.50'
-      '@swc/wasm': '>=1.2.50'
-      '@types/node': '*'
-      typescript: '>=2.7'
-    peerDependenciesMeta:
-      '@swc/core':
-        optional: true
-      '@swc/wasm':
-        optional: true
-    dependencies:
-      '@cspotcode/source-map-support': 0.7.0
-      '@tsconfig/node10': 1.0.8
-      '@tsconfig/node12': 1.0.9
-      '@tsconfig/node14': 1.0.1
-      '@tsconfig/node16': 1.0.2
-      '@types/node': 16.11.26
-      acorn: 8.6.0
-      acorn-walk: 8.2.0
-      arg: 4.1.3
-      create-require: 1.1.1
-      diff: 4.0.2
-      make-error: 1.3.6
-      typescript: 4.6.2
-      v8-compile-cache-lib: 3.0.0
-      yn: 3.1.1
-    dev: true
-
   /ts-node/10.5.0_b3e4244192457cbf945d8449b1fa5769:
     resolution: {integrity: sha512-6kEJKwVxAJ35W4akuiysfKwKmjkbYxwQMTBaAxo9KKAx/Yd26mPUyhGz3ji+EsJoAgrLqVsYHNuuYwQe22lbtw==}
     hasBin: true
@@ -19575,6 +19544,37 @@ packages:
       diff: 4.0.2
       make-error: 1.3.6
       typescript: 4.5.5
+      v8-compile-cache-lib: 3.0.0
+      yn: 3.1.1
+    dev: true
+
+  /ts-node/10.6.0_045cabcbf8818eda83522fe731c87088:
+    resolution: {integrity: sha512-CJen6+dfOXolxudBQXnVjRVvYTmTWbyz7cn+xq2XTsvnaXbHqr4gXSCNbS2Jj8yTZMuGwUoBESLaOkLascVVvg==}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': '>=1.2.50'
+      '@swc/wasm': '>=1.2.50'
+      '@types/node': '*'
+      typescript: '>=2.7'
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      '@swc/wasm':
+        optional: true
+    dependencies:
+      '@cspotcode/source-map-support': 0.7.0
+      '@tsconfig/node10': 1.0.8
+      '@tsconfig/node12': 1.0.9
+      '@tsconfig/node14': 1.0.1
+      '@tsconfig/node16': 1.0.2
+      '@types/node': 16.11.26
+      acorn: 8.6.0
+      acorn-walk: 8.2.0
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 4.6.2
       v8-compile-cache-lib: 3.0.0
       yn: 3.1.1
     dev: true
@@ -20293,7 +20293,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-tsconfig-paths/3.4.1_vite@2.8.5:
+  /vite-tsconfig-paths/3.4.1_vite@2.8.6:
     resolution: {integrity: sha512-SgK3/pnTuJ3i+gMSAWLR6VCPSw26bnxawrmXGvCDjJgk8MAQgmbCrFrAzfwbwZBXSqSuvWEuX04Wt73qJKx8fQ==}
     peerDependencies:
       vite: '>2.0.0-0'
@@ -20302,13 +20302,13 @@ packages:
       globrex: 0.1.2
       recrawl-sync: 2.2.1
       tsconfig-paths: 3.12.0
-      vite: 2.8.5
+      vite: 2.8.6
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/2.8.5:
-    resolution: {integrity: sha512-C/7EGNa1ugWejol6nOcd/0d8PR70Nzd+XXwsPbnNOfzZw0NN2xyXfmw/GNDHgr5fcaTSO4gjxCJCrwNhQUMhmA==}
+  /vite/2.8.6:
+    resolution: {integrity: sha512-e4H0QpludOVKkmOsRyqQ7LTcMUDF3mcgyNU4lmi0B5JUbe0ZxeBBl8VoZ8Y6Rfn9eFKYtdXNPcYK97ZwH+K2ug==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:

@@ -31,7 +31,7 @@ importers:
       '@nestjs/platform-fastify': 8.2.6
       '@nestjs/schematics': 8.0.7
       '@nestjs/terminus': 8.0.4
-      '@nestjs/testing': 8.3.1
+      '@nestjs/testing': 8.4.0
       '@types/express': 4.17.13
       '@types/jest': 27.4.1
       '@types/node': 16.11.26
@@ -64,7 +64,7 @@ importers:
       '@kby/scripts': link:../../packages/scripts
       '@nestjs/cli': 8.2.1
       '@nestjs/schematics': 8.0.7_typescript@4.6.2
-      '@nestjs/testing': 8.3.1_b893ca8083ee374883b6d648098a9aeb
+      '@nestjs/testing': 8.4.0_b893ca8083ee374883b6d648098a9aeb
       '@types/express': 4.17.13
       '@types/jest': 27.4.1
       '@types/node': 16.11.26
@@ -5253,8 +5253,8 @@ packages:
       rxjs: 7.5.2
     dev: false
 
-  /@nestjs/testing/8.3.1_b893ca8083ee374883b6d648098a9aeb:
-    resolution: {integrity: sha512-QZ7WwXYpUpfuyLddFwPSkJOWbpTUCtxvY2P9DjxcEsafmxaCeEURBM0DjaKcSwsTvyg9WIew803zViJO5NklPA==}
+  /@nestjs/testing/8.4.0_b893ca8083ee374883b6d648098a9aeb:
+    resolution: {integrity: sha512-Gk9OW4RpiIGDOROHS7O271uJEpIddQP94zlkPOVOu3HPUxntfKbmDU4cDaCqC0PQ9Jtj71C0H1j9RS8ituYLAw==}
     peerDependencies:
       '@nestjs/common': ^8.0.0
       '@nestjs/core': ^8.0.0

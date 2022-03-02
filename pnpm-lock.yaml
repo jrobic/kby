@@ -234,7 +234,7 @@ importers:
       '@storybook/addon-postcss': 2.0.0
       '@storybook/react': 6.4.19
       '@tailwindcss/aspect-ratio': 0.4.0
-      '@tailwindcss/forms': 0.4.0
+      '@tailwindcss/forms': 0.5.0
       '@tailwindcss/line-clamp': 0.3.1
       '@tailwindcss/typography': 0.5.2
       '@testing-library/jest-dom': 5.16.2
@@ -267,7 +267,7 @@ importers:
       '@storybook/addon-postcss': 2.0.0
       '@storybook/react': 6.4.19_83c6dab03eb7d78ff94b7fa3338d3505
       '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@3.0.23
-      '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.23
+      '@tailwindcss/forms': 0.5.0_tailwindcss@3.0.23
       '@tailwindcss/line-clamp': 0.3.1_tailwindcss@3.0.23
       '@tailwindcss/typography': 0.5.2_tailwindcss@3.0.23
       '@testing-library/jest-dom': 5.16.2
@@ -7057,8 +7057,8 @@ packages:
       tailwindcss: 3.0.23_autoprefixer@10.4.2
     dev: true
 
-  /@tailwindcss/forms/0.4.0_tailwindcss@3.0.23:
-    resolution: {integrity: sha512-DeaQBx6EgEeuZPQACvC+mKneJsD8am1uiJugjgQK1+/Vt+Ai0GpFBC2T2fqnUad71WgOxyrZPE6BG1VaI6YqfQ==}
+  /@tailwindcss/forms/0.5.0_tailwindcss@3.0.23:
+    resolution: {integrity: sha512-KzWugryEBFkmoaYcBE18rs6gthWCFHHO7cAZm2/hv3hwD67AzwP7udSCa22E7R1+CEJL/FfhYsJWrc0b1aeSzw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:

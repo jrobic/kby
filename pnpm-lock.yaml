@@ -83,7 +83,7 @@ importers:
       '@kby/scripts': workspace:*
       '@kby/ui': workspace:*
       '@testing-library/jest-dom': 5.16.2
-      '@testing-library/react': 12.1.3
+      '@testing-library/react': 12.1.4
       '@testing-library/react-hooks': 7.0.2
       '@testing-library/user-event': 13.5.0
       '@types/react': 17.0.39
@@ -114,7 +114,7 @@ importers:
       '@kby/graphql': link:../../packages/graphql
       '@kby/scripts': link:../../packages/scripts
       '@testing-library/jest-dom': 5.16.2
-      '@testing-library/react': 12.1.3_react-dom@17.0.2+react@17.0.2
+      '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
       '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
       '@testing-library/user-event': 13.5.0
       '@types/react': 17.0.39
@@ -152,17 +152,17 @@ importers:
     specifiers:
       '@graphql-codegen/add': 3.1.1
       '@graphql-codegen/cli': 2.6.2
-      '@graphql-codegen/typescript': 2.4.6
-      '@graphql-codegen/typescript-operations': 2.3.3
-      '@graphql-codegen/typescript-react-query': 3.5.6
+      '@graphql-codegen/typescript': 2.4.7
+      '@graphql-codegen/typescript-operations': 2.3.4
+      '@graphql-codegen/typescript-react-query': 3.5.7
       graphql: 15.8.0
       typescript: 4.6.2
     devDependencies:
       '@graphql-codegen/add': 3.1.1_graphql@15.8.0
       '@graphql-codegen/cli': 2.6.2_graphql@15.8.0+typescript@4.6.2
-      '@graphql-codegen/typescript': 2.4.6_graphql@15.8.0
-      '@graphql-codegen/typescript-operations': 2.3.3_graphql@15.8.0
-      '@graphql-codegen/typescript-react-query': 3.5.6_graphql@15.8.0
+      '@graphql-codegen/typescript': 2.4.7_graphql@15.8.0
+      '@graphql-codegen/typescript-operations': 2.3.4_graphql@15.8.0
+      '@graphql-codegen/typescript-react-query': 3.5.7_graphql@15.8.0
       graphql: 15.8.0
       typescript: 4.6.2
 
@@ -238,7 +238,7 @@ importers:
       '@tailwindcss/line-clamp': 0.3.1
       '@tailwindcss/typography': 0.5.2
       '@testing-library/jest-dom': 5.16.2
-      '@testing-library/react': 12.1.3
+      '@testing-library/react': 12.1.4
       '@testing-library/react-hooks': 7.0.2
       '@testing-library/user-event': 13.5.0
       '@types/react': 17.0.39
@@ -271,7 +271,7 @@ importers:
       '@tailwindcss/line-clamp': 0.3.1_tailwindcss@3.0.23
       '@tailwindcss/typography': 0.5.2_tailwindcss@3.0.23
       '@testing-library/jest-dom': 5.16.2
-      '@testing-library/react': 12.1.3_react-dom@17.0.2+react@17.0.2
+      '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
       '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
       '@testing-library/user-event': 13.5.0
       '@types/react': 17.0.39
@@ -3863,14 +3863,14 @@ packages:
       tslib: 2.3.1
     dev: true
 
-  /@graphql-codegen/typescript-operations/2.3.3_graphql@15.8.0:
-    resolution: {integrity: sha512-3VKRyuRI+B1LLRYq7ZwyTixIgl5KbyLqmCa/i8ihVPx+2IDnHbHrAmeHvj5zqHteZ4wXxkKOzuygr5CheAwCew==}
+  /@graphql-codegen/typescript-operations/2.3.4_graphql@15.8.0:
+    resolution: {integrity: sha512-Jnsx+YTCqwq8F0ebyZAJGVtt+PQNuB/0uv9mEMbgcUbo/7w6EX6NZ8JArRuuz8MUb/gbpeO+GkfuNX+F6A8ikw==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       '@graphql-codegen/plugin-helpers': 2.4.1_graphql@15.8.0
-      '@graphql-codegen/typescript': 2.4.6_graphql@15.8.0
-      '@graphql-codegen/visitor-plugin-common': 2.7.2_graphql@15.8.0
+      '@graphql-codegen/typescript': 2.4.7_graphql@15.8.0
+      '@graphql-codegen/visitor-plugin-common': 2.7.3_graphql@15.8.0
       auto-bind: 4.0.0
       graphql: 15.8.0
       tslib: 2.3.1
@@ -3878,13 +3878,13 @@ packages:
       - supports-color
     dev: true
 
-  /@graphql-codegen/typescript-react-query/3.5.6_graphql@15.8.0:
-    resolution: {integrity: sha512-ISX5I9HgyQ3BivRuruxriaOLaIBfxO7ErR7mD76yh8xlCfIn17bM/H7ueq4HGjzgwcGs5fQtaJd6Jd260xrWYg==}
+  /@graphql-codegen/typescript-react-query/3.5.7_graphql@15.8.0:
+    resolution: {integrity: sha512-00OFkDpmBcl+qViLmETJgstAQasXTZrJhn6loBrbMFqhTJWUo+MIOTLTeqkCAtO4b/w7bqKBgZavXTQmzoV/6A==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       '@graphql-codegen/plugin-helpers': 2.4.1_graphql@15.8.0
-      '@graphql-codegen/visitor-plugin-common': 2.7.2_graphql@15.8.0
+      '@graphql-codegen/visitor-plugin-common': 2.7.3_graphql@15.8.0
       auto-bind: 4.0.0
       change-case-all: 1.0.14
       graphql: 15.8.0
@@ -3893,14 +3893,14 @@ packages:
       - supports-color
     dev: true
 
-  /@graphql-codegen/typescript/2.4.6_graphql@15.8.0:
-    resolution: {integrity: sha512-hh8DYaIkjH5KQtRggR5WYpeyE8R4CzS1rT+i1rSxzTbPOvXbbGFRV3s1wb2xQLybsgLfeLXUe/jwhGYpEGTvlg==}
+  /@graphql-codegen/typescript/2.4.7_graphql@15.8.0:
+    resolution: {integrity: sha512-1YAK+m9SZRS1Uy8hdXVQAaAG/WF2jdFD76wbMRQ8Lf5e9YbmtJuy1RpI13nZJTZbhFopd9zqoWFJHsU/oy4i7g==}
     peerDependencies:
       graphql: ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       '@graphql-codegen/plugin-helpers': 2.4.1_graphql@15.8.0
       '@graphql-codegen/schema-ast': 2.4.1_graphql@15.8.0
-      '@graphql-codegen/visitor-plugin-common': 2.7.2_graphql@15.8.0
+      '@graphql-codegen/visitor-plugin-common': 2.7.3_graphql@15.8.0
       auto-bind: 4.0.0
       graphql: 15.8.0
       tslib: 2.3.1
@@ -3908,8 +3908,8 @@ packages:
       - supports-color
     dev: true
 
-  /@graphql-codegen/visitor-plugin-common/2.7.2_graphql@15.8.0:
-    resolution: {integrity: sha512-k6ROgxRAOvBtlwZdSFb6G6AFkBqvZsIWXfBe29xkPdzYKj6cSE/wqwf8AzcbV+ITTNsYW/W34NzQCwdVtFVs0w==}
+  /@graphql-codegen/visitor-plugin-common/2.7.3_graphql@15.8.0:
+    resolution: {integrity: sha512-rODPGkrHEf9aHD8SgVWS0xie8VmJoYXLWgQR8PFKrwCUFjf7nvDuATAL2lTFiHATlVBWg1meXVPdUlkKeJj/0Q==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
@@ -6771,8 +6771,8 @@ packages:
       react-error-boundary: 3.1.4_react@17.0.2
     dev: true
 
-  /@testing-library/react/12.1.3_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-oCULRXWRrBtC9m6G/WohPo1GLcLesH7T4fuKzRAKn1CWVu9BzXtqLXDDTA6KhFNNtRwLtfSMr20HFl+Qrdrvmg==}
+  /@testing-library/react/12.1.4_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-jiPKOm7vyUw311Hn/HlNQ9P8/lHNtArAx0PisXyFixDDvfl8DbD6EUdbshK5eqauvBSvzZd19itqQ9j3nferJA==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '*'

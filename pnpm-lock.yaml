@@ -138,14 +138,14 @@ importers:
       '@kby/scripts': workspace:*
       '@testing-library/cypress': 8.0.2
       '@types/node': 16.11.26
-      cypress: 9.5.1
+      cypress: 9.5.2
       typescript: 4.6.2
     devDependencies:
-      '@cypress/code-coverage': 3.9.12_cypress@9.5.1
+      '@cypress/code-coverage': 3.9.12_cypress@9.5.2
       '@kby/scripts': link:../scripts
-      '@testing-library/cypress': 8.0.2_cypress@9.5.1
+      '@testing-library/cypress': 8.0.2_cypress@9.5.2
       '@types/node': 16.11.26
-      cypress: 9.5.1
+      cypress: 9.5.2
       typescript: 4.6.2
 
   packages/graphql:
@@ -3958,14 +3958,14 @@ packages:
       - supports-color
     dev: true
 
-  /@cypress/code-coverage/3.9.12_cypress@9.5.1:
+  /@cypress/code-coverage/3.9.12_cypress@9.5.2:
     resolution: {integrity: sha512-2QuDSQ2ovz2ZsbQImM917q+9JmEq4afC4kpgHe2o3rTQxUrs7CdHM84rT8XKl0gJIXmbMcNq2rZqe40/eFmCFw==}
     peerDependencies:
       cypress: '*'
     dependencies:
       '@cypress/browserify-preprocessor': 3.0.2
       chalk: 4.1.2
-      cypress: 9.5.1
+      cypress: 9.5.2
       dayjs: 1.10.7
       debug: 4.3.3
       execa: 4.1.0
@@ -7120,7 +7120,7 @@ packages:
       tailwindcss: 3.0.23_autoprefixer@10.4.2
     dev: true
 
-  /@testing-library/cypress/8.0.2_cypress@9.5.1:
+  /@testing-library/cypress/8.0.2_cypress@9.5.2:
     resolution: {integrity: sha512-KVdm7n37sg/A4e3wKMD4zUl0NpzzVhx06V9Tf0hZHZ7nrZ4yFva6Zwg2EFF1VzHkEfN/ahUzRtT1qiW+vuWnJw==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -7128,7 +7128,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.16.5
       '@testing-library/dom': 8.11.1
-      cypress: 9.5.1
+      cypress: 9.5.2
     dev: true
 
   /@testing-library/dom/8.11.1:
@@ -10619,8 +10619,8 @@ packages:
     resolution: {integrity: sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=}
     dev: true
 
-  /cypress/9.5.1:
-    resolution: {integrity: sha512-H7lUWB3Svr44gz1rNnj941xmdsCljXoJa2cDneAltjI9leKLMQLm30x6jLlpQ730tiVtIbW5HdUmBzPzwzfUQg==}
+  /cypress/9.5.2:
+    resolution: {integrity: sha512-gYiQYvJozMzDOriUV1rCt6CeRM/pRK4nhwGJj3nJQyX2BoUdTCVwp30xDMKc771HiNVhBtgj5o5/iBdVDVXQUg==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     requiresBuild: true

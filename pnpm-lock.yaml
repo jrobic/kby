@@ -31,7 +31,7 @@ importers:
       '@nestjs/platform-fastify': 8.2.6
       '@nestjs/schematics': 8.0.8
       '@nestjs/terminus': 8.0.4
-      '@nestjs/testing': 8.4.1
+      '@nestjs/testing': 8.4.2
       '@types/express': 4.17.13
       '@types/jest': 27.4.1
       '@types/node': 16.11.26
@@ -64,7 +64,7 @@ importers:
       '@kby/scripts': link:../../packages/scripts
       '@nestjs/cli': 8.2.4
       '@nestjs/schematics': 8.0.8_typescript@4.6.2
-      '@nestjs/testing': 8.4.1_b893ca8083ee374883b6d648098a9aeb
+      '@nestjs/testing': 8.4.2_b893ca8083ee374883b6d648098a9aeb
       '@types/express': 4.17.13
       '@types/jest': 27.4.1
       '@types/node': 16.11.26
@@ -154,7 +154,7 @@ importers:
       '@graphql-codegen/cli': 2.6.2
       '@graphql-codegen/typescript': 2.4.8
       '@graphql-codegen/typescript-operations': 2.3.5
-      '@graphql-codegen/typescript-react-query': 3.5.8
+      '@graphql-codegen/typescript-react-query': 3.5.9
       graphql: 15.8.0
       typescript: 4.6.2
     devDependencies:
@@ -162,7 +162,7 @@ importers:
       '@graphql-codegen/cli': 2.6.2_graphql@15.8.0+typescript@4.6.2
       '@graphql-codegen/typescript': 2.4.8_graphql@15.8.0
       '@graphql-codegen/typescript-operations': 2.3.5_graphql@15.8.0
-      '@graphql-codegen/typescript-react-query': 3.5.8_graphql@15.8.0
+      '@graphql-codegen/typescript-react-query': 3.5.9_graphql@15.8.0
       graphql: 15.8.0
       typescript: 4.6.2
 
@@ -4340,8 +4340,8 @@ packages:
       - supports-color
     dev: true
 
-  /@graphql-codegen/typescript-react-query/3.5.8_graphql@15.8.0:
-    resolution: {integrity: sha512-hV1/gIpImZO4DcK/iCtg8dpfRQEvcOcyW4GQTz86TtRb6z17/nxeo4j5TuB3VYWjr/ITxD/lkmgNYIevjQjB2g==}
+  /@graphql-codegen/typescript-react-query/3.5.9_graphql@15.8.0:
+    resolution: {integrity: sha512-Pdz9ZxPD4tldyZhX826HrXZAZe6pYP3kWAzXnQYfvihbnPKxGe9AsL8Rp7uj67no4Yi5aHYSuPA52Dt7cUYFOg==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
@@ -5339,8 +5339,8 @@ packages:
       rxjs: 7.5.2
     dev: false
 
-  /@nestjs/testing/8.4.1_b893ca8083ee374883b6d648098a9aeb:
-    resolution: {integrity: sha512-LOvsLuNh2eRwAtyeoIZWmUZ08wt7QrPrKQujWuRyv+vBYtC+FLHjqreWLpwG2yulNEoQs9Qlr2ubPvFGT1953g==}
+  /@nestjs/testing/8.4.2_b893ca8083ee374883b6d648098a9aeb:
+    resolution: {integrity: sha512-vb8sJTjdakqa9k5tMdcKJf8lG3TT7ekwaVbQ4FXGBjjYrriILYioQv23kkKrgOkT1HErUPdYAgeECw5qE8MIzg==}
     peerDependencies:
       '@nestjs/common': ^8.0.0
       '@nestjs/core': ^8.0.0

@@ -31,7 +31,7 @@ importers:
       '@nestjs/platform-fastify': 8.2.6
       '@nestjs/schematics': 8.0.8
       '@nestjs/terminus': 8.0.4
-      '@nestjs/testing': 8.4.2
+      '@nestjs/testing': 8.4.3
       '@types/express': 4.17.13
       '@types/jest': 27.4.1
       '@types/node': 16.11.26
@@ -64,7 +64,7 @@ importers:
       '@kby/scripts': link:../../packages/scripts
       '@nestjs/cli': 8.2.4
       '@nestjs/schematics': 8.0.8_typescript@4.6.3
-      '@nestjs/testing': 8.4.2_b893ca8083ee374883b6d648098a9aeb
+      '@nestjs/testing': 8.4.3_b893ca8083ee374883b6d648098a9aeb
       '@types/express': 4.17.13
       '@types/jest': 27.4.1
       '@types/node': 16.11.26
@@ -5339,8 +5339,8 @@ packages:
       rxjs: 7.5.2
     dev: false
 
-  /@nestjs/testing/8.4.2_b893ca8083ee374883b6d648098a9aeb:
-    resolution: {integrity: sha512-vb8sJTjdakqa9k5tMdcKJf8lG3TT7ekwaVbQ4FXGBjjYrriILYioQv23kkKrgOkT1HErUPdYAgeECw5qE8MIzg==}
+  /@nestjs/testing/8.4.3_b893ca8083ee374883b6d648098a9aeb:
+    resolution: {integrity: sha512-6+b2UCObr5onv7TG398VUdkNeU9n+f+TeTvlzmZlp9LKIAS4ZxDxwpdLDl5m/AssdkaZpfb0u755BJfKP5wbNw==}
     peerDependencies:
       '@nestjs/common': ^8.0.0
       '@nestjs/core': ^8.0.0
@@ -8737,7 +8737,7 @@ packages:
   /axios/0.21.4_debug@4.3.2:
     resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
     dependencies:
-      follow-redirects: 1.14.6
+      follow-redirects: 1.14.6_debug@4.3.2
     transitivePeerDependencies:
       - debug
     dev: true
@@ -8745,7 +8745,7 @@ packages:
   /axios/0.24.0:
     resolution: {integrity: sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==}
     dependencies:
-      follow-redirects: 1.14.6
+      follow-redirects: 1.14.6_debug@4.3.2
     transitivePeerDependencies:
       - debug
     dev: false
@@ -12589,7 +12589,7 @@ packages:
       readable-stream: 2.3.7
     dev: true
 
-  /follow-redirects/1.14.6:
+  /follow-redirects/1.14.6_debug@4.3.2:
     resolution: {integrity: sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A==}
     engines: {node: '>=4.0'}
     peerDependencies:
@@ -12597,6 +12597,8 @@ packages:
     peerDependenciesMeta:
       debug:
         optional: true
+    dependencies:
+      debug: 4.3.2
 
   /follow-redirects/1.14.7:
     resolution: {integrity: sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==}

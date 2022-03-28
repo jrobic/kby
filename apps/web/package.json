@@ -6,6 +6,7 @@
     "codegen": "graphql-codegen",
     "start": "serve dist -p 8081",
     "dev": "vite --port 9001 --clearScreen false",
+    "dev:codegen": "graphql-codegen -w",
     "prebuild": "npm run codegen",
     "build": "tsc && vite build",
     "preview": "vite preview",

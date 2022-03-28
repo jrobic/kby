@@ -1,0 +1,7 @@
+.turbo
+.env*
+/*.*
+coverage
+node_modules
+src
+

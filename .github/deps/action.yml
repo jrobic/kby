@@ -1,4 +1,4 @@
-name: "⚡️  Install Deps"
+name: "Install Deps"
 description: "Install pnpm with node, install dependencies"
 
 inputs:
@@ -10,19 +10,19 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: ⎔. Setup pnpm
+    - name: Setup pnpm
       uses: pnpm/action-setup@v2.0.1
       with:
         version: latest
 
-    - name: ⎔. Setup node ${{ inputs.node-version }}
+    - name: Setup node ${{ inputs.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ inputs.node-version }}
         cache: "pnpm"
 
     # https://pnpm.io/continuous-integration#github-actions
-    - name: ⚡️. Cache .pnpm-store
+    - name: Cache .pnpm-store
       uses: actions/cache@v2
       with:
         path: |

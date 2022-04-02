@@ -7,14 +7,14 @@ importers:
       '@commitlint/cli': 16.2.3
       '@commitlint/config-conventional': 16.2.1
       husky: 7.0.4
-      prettier: 2.6.1
+      prettier: 2.6.2
       start-server-and-test: 1.14.0
       turbo: latest
     devDependencies:
       '@commitlint/cli': 16.2.3
       '@commitlint/config-conventional': 16.2.1
       husky: 7.0.4
-      prettier: 2.6.1
+      prettier: 2.6.2
       start-server-and-test: 1.14.0
       turbo: 1.1.10
 
@@ -206,7 +206,7 @@ importers:
       eslint-plugin-import: 2.25.3_eslint@8.5.0
       eslint-plugin-jest: 25.3.0_b2546a5a46ab027caf7d1440bd4abc38
       eslint-plugin-jsx-a11y: 6.5.1_eslint@8.5.0
-      eslint-plugin-prettier: 4.0.0_4e2328700941e3471f04be84d1335a63
+      eslint-plugin-prettier: 4.0.0_9fde4b62d2f523479a1a2c7a778a1fac
       eslint-plugin-react: 7.27.1_eslint@8.5.0
       eslint-plugin-react-hooks: 4.3.0_eslint@8.5.0
       eslint-plugin-testing-library: 5.0.1_eslint@8.5.0
@@ -8731,7 +8731,7 @@ packages:
   /axios/0.21.4_debug@4.3.2:
     resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
     dependencies:
-      follow-redirects: 1.14.6_debug@4.3.2
+      follow-redirects: 1.14.6
     transitivePeerDependencies:
       - debug
     dev: true
@@ -8739,7 +8739,7 @@ packages:
   /axios/0.24.0:
     resolution: {integrity: sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==}
     dependencies:
-      follow-redirects: 1.14.6_debug@4.3.2
+      follow-redirects: 1.14.6
     transitivePeerDependencies:
       - debug
     dev: false
@@ -11779,7 +11779,7 @@ packages:
       minimatch: 3.0.4
     dev: false
 
-  /eslint-plugin-prettier/4.0.0_4e2328700941e3471f04be84d1335a63:
+  /eslint-plugin-prettier/4.0.0_9fde4b62d2f523479a1a2c7a778a1fac:
     resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
@@ -11792,7 +11792,7 @@ packages:
     dependencies:
       eslint: 8.5.0
       eslint-config-prettier: 8.3.0_eslint@8.5.0
-      prettier: 2.6.1
+      prettier: 2.6.2
       prettier-linter-helpers: 1.0.0
     dev: false
 
@@ -12593,7 +12593,7 @@ packages:
       readable-stream: 2.3.7
     dev: true
 
-  /follow-redirects/1.14.6_debug@4.3.2:
+  /follow-redirects/1.14.6:
     resolution: {integrity: sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A==}
     engines: {node: '>=4.0'}
     peerDependencies:
@@ -12601,8 +12601,6 @@ packages:
     peerDependenciesMeta:
       debug:
         optional: true
-    dependencies:
-      debug: 4.3.2
 
   /follow-redirects/1.14.7:
     resolution: {integrity: sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==}
@@ -17098,8 +17096,8 @@ packages:
     hasBin: true
     dev: true
 
-  /prettier/2.6.1:
-    resolution: {integrity: sha512-8UVbTBYGwN37Bs9LERmxCPjdvPxlEowx2urIL6urHzdb3SDq4B/Z6xLFCblrSnE4iKWcS6ziJ3aOYrc1kz/E2A==}
+  /prettier/2.6.2:
+    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true

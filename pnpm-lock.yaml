@@ -82,7 +82,7 @@ importers:
       '@kby/graphql': workspace:*
       '@kby/scripts': workspace:*
       '@kby/ui': workspace:*
-      '@testing-library/jest-dom': 5.16.3
+      '@testing-library/jest-dom': 5.16.4
       '@testing-library/react': 12.1.4
       '@testing-library/react-hooks': 7.0.2
       '@testing-library/user-event': 13.5.0
@@ -113,7 +113,7 @@ importers:
     devDependencies:
       '@kby/graphql': link:../../packages/graphql
       '@kby/scripts': link:../../packages/scripts
-      '@testing-library/jest-dom': 5.16.3
+      '@testing-library/jest-dom': 5.16.4
       '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
       '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
       '@testing-library/user-event': 13.5.0
@@ -237,7 +237,7 @@ importers:
       '@tailwindcss/forms': 0.5.0
       '@tailwindcss/line-clamp': 0.3.1
       '@tailwindcss/typography': 0.5.2
-      '@testing-library/jest-dom': 5.16.3
+      '@testing-library/jest-dom': 5.16.4
       '@testing-library/react': 12.1.4
       '@testing-library/react-hooks': 7.0.2
       '@testing-library/user-event': 13.5.0
@@ -270,7 +270,7 @@ importers:
       '@tailwindcss/forms': 0.5.0_tailwindcss@3.0.23
       '@tailwindcss/line-clamp': 0.3.1_tailwindcss@3.0.23
       '@tailwindcss/typography': 0.5.2_tailwindcss@3.0.23
-      '@testing-library/jest-dom': 5.16.3
+      '@testing-library/jest-dom': 5.16.4
       '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
       '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
       '@testing-library/user-event': 13.5.0
@@ -7190,8 +7190,8 @@ packages:
       pretty-format: 27.4.2
     dev: true
 
-  /@testing-library/jest-dom/5.16.3:
-    resolution: {integrity: sha512-u5DfKj4wfSt6akfndfu1eG06jsdyA/IUrlX2n3pyq5UXgXMhXY+NJb8eNK/7pqPWAhCKsCGWDdDO0zKMKAYkEA==}
+  /@testing-library/jest-dom/5.16.4:
+    resolution: {integrity: sha512-Gy+IoFutbMQcky0k+bqqumXZ1cTGswLsFqmNLzNdSKkU9KGV2u9oXhukCbbJ9/LRPKiqwxEE8VpV/+YZlfkPUA==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@babel/runtime': 7.16.5
@@ -8731,7 +8731,7 @@ packages:
   /axios/0.21.4_debug@4.3.2:
     resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
     dependencies:
-      follow-redirects: 1.14.6
+      follow-redirects: 1.14.6_debug@4.3.2
     transitivePeerDependencies:
       - debug
     dev: true
@@ -8739,7 +8739,7 @@ packages:
   /axios/0.24.0:
     resolution: {integrity: sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==}
     dependencies:
-      follow-redirects: 1.14.6
+      follow-redirects: 1.14.6_debug@4.3.2
     transitivePeerDependencies:
       - debug
     dev: false
@@ -12593,7 +12593,7 @@ packages:
       readable-stream: 2.3.7
     dev: true
 
-  /follow-redirects/1.14.6:
+  /follow-redirects/1.14.6_debug@4.3.2:
     resolution: {integrity: sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A==}
     engines: {node: '>=4.0'}
     peerDependencies:
@@ -12601,6 +12601,8 @@ packages:
     peerDependenciesMeta:
       debug:
         optional: true
+    dependencies:
+      debug: 4.3.2
 
   /follow-redirects/1.14.7:
     resolution: {integrity: sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==}

@@ -16,7 +16,7 @@ importers:
       husky: 7.0.4
       prettier: 2.6.2
       start-server-and-test: 1.14.0
-      turbo: 1.2.1
+      turbo: 1.2.2
 
   apps/api:
     specifiers:
@@ -83,7 +83,7 @@ importers:
       '@kby/scripts': workspace:*
       '@kby/ui': workspace:*
       '@testing-library/jest-dom': 5.16.4
-      '@testing-library/react': 12.1.4
+      '@testing-library/react': 12.1.5
       '@testing-library/react-hooks': 7.0.2
       '@testing-library/user-event': 13.5.0
       '@types/react': 17.0.44
@@ -102,7 +102,7 @@ importers:
       typescript: 4.6.3
       vite: 2.9.1
       vite-plugin-env-compatible: 1.1.1
-      vite-plugin-istanbul: 2.5.1
+      vite-plugin-istanbul: 2.7.0
       vite-tsconfig-paths: 3.4.1
     dependencies:
       '@kby/ui': link:../../packages/ui
@@ -114,7 +114,7 @@ importers:
       '@kby/graphql': link:../../packages/graphql
       '@kby/scripts': link:../../packages/scripts
       '@testing-library/jest-dom': 5.16.4
-      '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
+      '@testing-library/react': 12.1.5_react-dom@17.0.2+react@17.0.2
       '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
       '@testing-library/user-event': 13.5.0
       '@types/react': 17.0.44
@@ -129,7 +129,7 @@ importers:
       typescript: 4.6.3
       vite: 2.9.1
       vite-plugin-env-compatible: 1.1.1
-      vite-plugin-istanbul: 2.5.1
+      vite-plugin-istanbul: 2.7.0
       vite-tsconfig-paths: 3.4.1_vite@2.9.1
 
   packages/e2e:
@@ -138,14 +138,14 @@ importers:
       '@kby/scripts': workspace:*
       '@testing-library/cypress': 8.0.2
       '@types/node': 16.11.26
-      cypress: 9.5.3
+      cypress: 9.5.4
       typescript: 4.6.3
     devDependencies:
-      '@cypress/code-coverage': 3.9.12_cypress@9.5.3
+      '@cypress/code-coverage': 3.9.12_cypress@9.5.4
       '@kby/scripts': link:../scripts
-      '@testing-library/cypress': 8.0.2_cypress@9.5.3
+      '@testing-library/cypress': 8.0.2_cypress@9.5.4
       '@types/node': 16.11.26
-      cypress: 9.5.3
+      cypress: 9.5.4
       typescript: 4.6.3
 
   packages/graphql:
@@ -238,7 +238,7 @@ importers:
       '@tailwindcss/line-clamp': 0.3.1
       '@tailwindcss/typography': 0.5.2
       '@testing-library/jest-dom': 5.16.4
-      '@testing-library/react': 12.1.4
+      '@testing-library/react': 12.1.5
       '@testing-library/react-hooks': 7.0.2
       '@testing-library/user-event': 13.5.0
       '@types/react': 17.0.44
@@ -271,7 +271,7 @@ importers:
       '@tailwindcss/line-clamp': 0.3.1_tailwindcss@3.0.23
       '@tailwindcss/typography': 0.5.2_tailwindcss@3.0.23
       '@testing-library/jest-dom': 5.16.4
-      '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
+      '@testing-library/react': 12.1.5_react-dom@17.0.2+react@17.0.2
       '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
       '@testing-library/user-event': 13.5.0
       '@types/react': 17.0.44
@@ -4094,14 +4094,14 @@ packages:
       - supports-color
     dev: true
 
-  /@cypress/code-coverage/3.9.12_cypress@9.5.3:
+  /@cypress/code-coverage/3.9.12_cypress@9.5.4:
     resolution: {integrity: sha512-2QuDSQ2ovz2ZsbQImM917q+9JmEq4afC4kpgHe2o3rTQxUrs7CdHM84rT8XKl0gJIXmbMcNq2rZqe40/eFmCFw==}
     peerDependencies:
       cypress: '*'
     dependencies:
       '@cypress/browserify-preprocessor': 3.0.2
       chalk: 4.1.2
-      cypress: 9.5.3
+      cypress: 9.5.4
       dayjs: 1.10.7
       debug: 4.3.3
       execa: 4.1.0
@@ -7256,7 +7256,7 @@ packages:
       tailwindcss: 3.0.23_autoprefixer@10.4.4
     dev: true
 
-  /@testing-library/cypress/8.0.2_cypress@9.5.3:
+  /@testing-library/cypress/8.0.2_cypress@9.5.4:
     resolution: {integrity: sha512-KVdm7n37sg/A4e3wKMD4zUl0NpzzVhx06V9Tf0hZHZ7nrZ4yFva6Zwg2EFF1VzHkEfN/ahUzRtT1qiW+vuWnJw==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -7264,7 +7264,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.16.5
       '@testing-library/dom': 8.11.1
-      cypress: 9.5.3
+      cypress: 9.5.4
     dev: true
 
   /@testing-library/dom/8.11.1:
@@ -7318,12 +7318,12 @@ packages:
       react-error-boundary: 3.1.4_react@17.0.2
     dev: true
 
-  /@testing-library/react/12.1.4_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-jiPKOm7vyUw311Hn/HlNQ9P8/lHNtArAx0PisXyFixDDvfl8DbD6EUdbshK5eqauvBSvzZd19itqQ9j3nferJA==}
+  /@testing-library/react/12.1.5_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-OfTXCJUFgjd/digLUuPxa0+/3ZxsQmE7ub9kcbW/wi96Bh3o/p5vrETcBGfP17NWPGqeYYl5LTRpwyGoMC4ysg==}
     engines: {node: '>=12'}
     peerDependencies:
-      react: '*'
-      react-dom: '*'
+      react: <18.0.0
+      react-dom: <18.0.0
     dependencies:
       '@babel/runtime': 7.16.5
       '@testing-library/dom': 8.11.1
@@ -10755,8 +10755,8 @@ packages:
     resolution: {integrity: sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=}
     dev: true
 
-  /cypress/9.5.3:
-    resolution: {integrity: sha512-ItelIVmqMTnKYbo1JrErhsGgQGjWOxCpHT1TfMvwnIXKXN/OSlPjEK7rbCLYDZhejQL99PmUqul7XORI24Ik0A==}
+  /cypress/9.5.4:
+    resolution: {integrity: sha512-6AyJAD8phe7IMvOL4oBsI9puRNOWxZjl8z1lgixJMcgJ85JJmyKeP6uqNA0dI1z14lmJ7Qklf2MOgP/xdAqJ/Q==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     requiresBuild: true
@@ -19864,119 +19864,119 @@ packages:
       safe-buffer: 5.2.1
     dev: true
 
-  /turbo-darwin-64/1.2.1:
-    resolution: {integrity: sha512-NZgrrFF4xJ73CRbIqQXwAfKF5AFEOeM79palpPjJJUXWX8o3KxW/VcrheAryh+aAaEBitaDy8stKgViI/6l1SQ==}
+  /turbo-darwin-64/1.2.2:
+    resolution: {integrity: sha512-2hidknFGrm2OzTcE0FBcvPIb2oewrnq4WbOOuVj+9e19rBVIs5BdN4LLvxihIxQelQdZXiPvSTVGLvvg8+mSpg==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64/1.2.1:
-    resolution: {integrity: sha512-NzWeE+rZJLEkbMpRpnHNn7R/qqamCRRUUxPWD2z4uuZFXkpMzUVX/PCqy05wPT2IVbcJQn20rojEMwr+oJRxHg==}
+  /turbo-darwin-arm64/1.2.2:
+    resolution: {integrity: sha512-R+7TAOdTSTDHZJoFVtL24GKUuWD4v+0qUcq8KzkLyAd7AeaPssTpwN+Tc0Nj/46RStf1PryBflu0J8ovi7SWbQ==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-freebsd-64/1.2.1:
-    resolution: {integrity: sha512-Y/V8swwuiesAWYU9pu7yPhTQhHnrZEFQq/oCDNQVkUK7SEHAu+UmMaDzSBwk+sg6JWVTkpcXX1yMUFDpfF43cg==}
+  /turbo-freebsd-64/1.2.2:
+    resolution: {integrity: sha512-EviJUMNfw9qah3Ko8Aow0qrglJ/qGadsv8LHfTuRL8SNix4cx3s2eEAkQ82kQey1eWjtfB6XSf4JTr5EzHko8w==}
     cpu: [x64]
     os: [freebsd]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-freebsd-arm64/1.2.1:
-    resolution: {integrity: sha512-ielxsQ0nM6/XCzopNk55rNryFCr3tHowhukteTmfOpgWsT2bDyP/PZUyMTIEtLoaoy2pDr4R+9Wf+db9xDtWQw==}
+  /turbo-freebsd-arm64/1.2.2:
+    resolution: {integrity: sha512-enz9o3qJq7SwD8pNU1EIcRIZaymNWih/SYQyrTnkD88kLcTS3LKsoenv8Jy2G0w4rCgoBsBLHLpepzRttGaxwQ==}
     cpu: [arm64]
     os: [freebsd]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-32/1.2.1:
-    resolution: {integrity: sha512-xQunD8jrkhzPq4miY8p65elUJIqRpyCrJSWukX73m3SpibQPVSQ8BNELEQzeJBjPTcEI2dFSsoAI7Z1NHDX/Pw==}
+  /turbo-linux-32/1.2.2:
+    resolution: {integrity: sha512-JyuJnFVT2u2wrvd3a5VpHigoKPJnGuNwGDnYYh6hJLpQLDk0mCRcdtViKInryPIQjbiq1oZYefYJfpPnU4MgtA==}
     cpu: [ia32]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64/1.2.1:
-    resolution: {integrity: sha512-vae1Y7VxumzityRH4ddaj0VEjIg3qbq6tV3TylOaacXvwIijrCVquG5otx9KXEajqzcwuu9+yp5348fUGA/Vxg==}
+  /turbo-linux-64/1.2.2:
+    resolution: {integrity: sha512-UT7SiMcN+4fyVcM7Y/p11qdypNmCUkY6zqyEGpC6G3HLZHeNt3z+nq0FZDDPiMskEP0WUbLAv1sICUKvHC4wPA==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm/1.2.1:
-    resolution: {integrity: sha512-8eKOw1OvD4e+vg9jg02gI9Y+rrJQfwMLaiUkIZTqvWjs7PytfmhtneaA08QkfMY/rksD5uPSx9sPE9MPYJtfxw==}
+  /turbo-linux-arm/1.2.2:
+    resolution: {integrity: sha512-HZPZG2eU1D+iHu7OvIIsMu2retLvERKgqAPb4mJ4R/xynXO0FUd07uUEJWU881ZH11mKPFWDwVfI4gjW95UuRg==}
     cpu: [arm]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64/1.2.1:
-    resolution: {integrity: sha512-cNRboXg4kbuoj7J4q3yje+COravXlga7FFZsM0onZNhSai0dYTGXayxOOCVKdN/IfxSG37A0jL0fk7vDyerRZg==}
+  /turbo-linux-arm64/1.2.2:
+    resolution: {integrity: sha512-RG/cXgrjLKowLYuYd5I7W0KS+RKoCpu6UI2YiIXShG8UGVHpGhKb1duJ2GC5gptYVWIJC3q1jqNgr5a93W+Rfw==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-mips64le/1.2.1:
-    resolution: {integrity: sha512-q4gXn09AriapgANzFgIdUzqB45CB6VqqvEAf8uZ4y8I91dEP562op4pp/D59bFAx7GgCZdFfvEc0KCE/5I+0UA==}
+  /turbo-linux-mips64le/1.2.2:
+    resolution: {integrity: sha512-r7M0e7AFBa8xBkifqsFfW3F+FLQanJkK4NiaSi2Y9IUgI1v4JEw6o6HKRGtUZ8wRRxGKY/4t8NyzzUH8a+PBXA==}
     cpu: [mips64el]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-ppc64le/1.2.1:
-    resolution: {integrity: sha512-xWaPfFNU/x2SqDkeQTwh7qJt0Ev/YUiKxcCTZDQbUykjVTC/6beD+DvqcFqsispYqZyRY5U/71EhlZLnHcIbFw==}
+  /turbo-linux-ppc64le/1.2.2:
+    resolution: {integrity: sha512-NY96rIJxKHqQgUkvLYQCwSsXeUkkcUFmKyRqrBlsVP0BZO3CbNvLgt+EPKy1+/RLAI7wwdes9B57GoezLyZezQ==}
     cpu: [ppc64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-32/1.2.1:
-    resolution: {integrity: sha512-BHu0qRKVHztgvzNc3Nq1B8/psYaldY3y0aYVRb1Kb+RNrmhyeYVfC5+4L4ez0AxuLlb2bc0BOrvPjiEkgv/uLA==}
+  /turbo-windows-32/1.2.2:
+    resolution: {integrity: sha512-IQYdaKqP7BxSGyU3iFNO/wKuJ17NwHPExACJiYZmua1pxM4wkeNcUCmb1u5zuJ2QbPB/+m4iGnDgitAdxUmdLw==}
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64/1.2.1:
-    resolution: {integrity: sha512-/l5j4pdKek1Q1qSj5xidVCDsU26hTo23oMmck/XEcbTOcnde9D+Y7pf5+RsmhtWEhP/yLGv3zUTYyRMf1Ahumw==}
+  /turbo-windows-64/1.2.2:
+    resolution: {integrity: sha512-o7jF8cCzfhTZXvGySudi/Tx72Dqv6mce8Qq58jXWXEpbMV8KJwYuX2BMhIZilNZWyCk0IUqofVPMmampga6nfQ==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo/1.2.1:
-    resolution: {integrity: sha512-k9j1xMGqNoSkeaCkbPOlGJFxsgYKG9TMg82o6LuiUerJtJ5sCwDwBD7QVy/RkngMGOAKeMLhx+OuzLFwa5nHgQ==}
+  /turbo/1.2.2:
+    resolution: {integrity: sha512-gt+QuvZVAQVcrKhgSCDJObIdh12bpt4zWOPe0yiWD/zyRJjNzkiXxR6WKSuAEUl0uQIB4XrRn2OGTmrR7KROJw==}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      turbo-darwin-64: 1.2.1
-      turbo-darwin-arm64: 1.2.1
-      turbo-freebsd-64: 1.2.1
-      turbo-freebsd-arm64: 1.2.1
-      turbo-linux-32: 1.2.1
-      turbo-linux-64: 1.2.1
-      turbo-linux-arm: 1.2.1
-      turbo-linux-arm64: 1.2.1
-      turbo-linux-mips64le: 1.2.1
-      turbo-linux-ppc64le: 1.2.1
-      turbo-windows-32: 1.2.1
-      turbo-windows-64: 1.2.1
+      turbo-darwin-64: 1.2.2
+      turbo-darwin-arm64: 1.2.2
+      turbo-freebsd-64: 1.2.2
+      turbo-freebsd-arm64: 1.2.2
+      turbo-linux-32: 1.2.2
+      turbo-linux-64: 1.2.2
+      turbo-linux-arm: 1.2.2
+      turbo-linux-arm64: 1.2.2
+      turbo-linux-mips64le: 1.2.2
+      turbo-linux-ppc64le: 1.2.2
+      turbo-windows-32: 1.2.2
+      turbo-windows-64: 1.2.2
     dev: true
 
   /tweetnacl/0.14.5:
@@ -20487,11 +20487,11 @@ packages:
     resolution: {integrity: sha512-4lqhBWhOzP+SaCPoCVdmpM5cXzjKQV5jgFauxea488oOeElXo/kw6bXkMIooZhrh9q7gclTl8en6N9NmnqUwRQ==}
     dev: true
 
-  /vite-plugin-istanbul/2.5.1:
-    resolution: {integrity: sha512-5ZR2/haQalUXVqHrjatZ0QKxzF3e0hBiJe6VhjGYxE7Yc4WFs7ZE56oazYB4jnPXvlirOvgLxG0LJQoHFdMxMg==}
+  /vite-plugin-istanbul/2.7.0:
+    resolution: {integrity: sha512-E+nNtT8jfwYhmm5P2yDZJoO5c3TpYbxEeICpEkCDcTdd6VzJXgwh5dEwR4AmvMF/fvqiVHlieOQQo32E4ilUUQ==}
     dependencies:
-      chalk: 4.1.2
-      istanbul-lib-instrument: 4.0.3
+      istanbul-lib-instrument: 5.1.0
+      picocolors: 1.0.0
       test-exclude: 6.0.0
     transitivePeerDependencies:
       - supports-color

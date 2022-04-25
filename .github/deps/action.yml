@@ -16,7 +16,7 @@ runs:
         version: latest
 
     - name: ⎔. Setup node ${{ inputs.node-version }}
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ inputs.node-version }}
         cache: "pnpm"

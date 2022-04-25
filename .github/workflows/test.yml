@@ -71,21 +71,21 @@ jobs:
       - name: 👷. Test
         run: pnpm run test:cov
 
-      - uses: codecov/codecov-action@v2
+      - uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: apps/api/coverage/clover.xml
           flags: api
           name: api
 
-      - uses: codecov/codecov-action@v2
+      - uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: apps/web/coverage/clover.xml
           flags: web
           name: web
 
-      - uses: codecov/codecov-action@v2
+      - uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: packages/ui/coverage/clover.xml
@@ -145,7 +145,7 @@ jobs:
           install: false
         env:
           DISABLE_TELEMETRY: "true"
-      - uses: codecov/codecov-action@v2
+      - uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: packages/e2e/coverage/clover.xml

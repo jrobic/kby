@@ -23,7 +23,7 @@ runs:
 
     # https://pnpm.io/continuous-integration#github-actions
     - name: ⚡️. Cache .pnpm-store
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: |
           ~/.pnpm-store
